@@ -1,0 +1,78 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.img-center {
+  display: inline-block;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.qv-alert{
+    position: fixed;
+    position: fixed;
+    z-index: 9999 !important;
+    top: -50%;
+    left: 50%;
+    width: 300px;
+    color: #fff;
+    font-size: 14px;
+    background: #536dfe;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transition:All 0.3s ease;
+    -webkit-transition:All 0.3s ease;
+    -moz-transition:All 0.3s ease;
+    -o-transition:All 0.3s ease;
+    visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.qv-alert.active{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    visibility: visible;
+    top: 50%;
+}
+.qv-alert img{
+    margin-right: 10px;
+    display: inline-block;
+}
+.add-to-cart.locked{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    /*filter: alpha(opacity=80);*/
+    /*-moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;*/
+    cursor: not-allowed !important;
+}

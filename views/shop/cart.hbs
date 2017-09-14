@@ -1,0 +1,163 @@
+<!-- Page Title
+		============================================= -->
+		<section id="page-title">
+
+			<div class="container clearfix">
+				<h1>Cart</h1>
+				<ol class="breadcrumb">
+					<li><a href="/">Home</a></li>
+					<li><a href="/shop">Shop</a></li>
+					<li class="active">Cart</li>
+				</ol>
+			</div>
+
+		</section><!-- #page-title end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+					{{#if products}}
+					<div class="table-responsive bottommargin">
+
+						<table class="table cart" style="width: 99%">
+							<thead>
+								<tr>
+									<th class="cart-product-remove">&nbsp;</th>
+									<th class="cart-product-thumbnail">&nbsp;</th>
+									<th class="cart-product-name">Product</th>
+									<th class="cart-product-price">Unit Price</th>
+									<th class="cart-product-quantity">Quantity</th>
+									<th class="cart-product-subtotal">Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								{{#each products}}
+									<tr class="cart_item">
+										<td class="cart-product-remove">
+											<a href="#" class="remove" title="Remove this item" data-id="{{this.item._id}}"><i class="icon-trash2"></i></a>
+										</td>
+										<td class="cart-product-thumbnail">
+											<a href="/shop/item-details/{{this.item.category}}/{{this.item._id}}"><img width="64" height="64" src="{{this.item.thumbnail}}" alt="{{this.item.name}}"></a>
+										</td>
+										<td class="cart-product-name">
+											<a href="/shop/item-details/{{this.item.category}}/{{this.item._id}}">{{this.item.name}}</a>
+										</td>
+										<td class="cart-product-price">
+											<span class="amount">$ {{this.price}}</span>
+										</td>
+										<td class="cart-product-quantity">
+											<div class="quantity clearfix spinner1" id="">
+												<input type="button" value="-" class="minus">
+												<input type="text" name="quantity" value="{{this.qty}}" class="qty spinner-input" />
+												<input type="button" value="+" class="plus">
+											</div>
+										</td>
+										<td class="cart-product-subtotal">
+											<span class="amount">$ {{ this.price}}</span>
+										</td>
+									</tr>
+								{{/each}}
+								<tr class="cart_item">
+									<td colspan="6">
+										<div class="row clearfix">
+											<div class="col-md-4 col-xs-4 nopadding">
+												<div class="col-md-8 col-xs-7 nopadding">
+													<input type="text" value="" class="sm-form-control" placeholder="Enter Coupon Code.." />
+												</div>
+												<div class="col-md-4 col-xs-5">
+													<a href="#" class="button button-3d button-black nomargin">Apply Coupon</a>
+												</div>
+											</div>
+											<div class="col-md-8 col-xs-8 nopadding">
+												<a href="#" class="button button-3d nomargin fright">Update Cart</a>
+												<a href="/shop/check-out" class="button button-3d notopmargin fright">Checkout</a>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+
+						</table>
+
+					</div>
+
+					<div class="row clearfix">
+						<div class="col-md-6 clearfix">
+							<!-- {{#if login}}
+							{{else}}
+								<div class="panel panel-default">
+									 <div class="panel-body">
+										  Returning customer? <a href="login-register.html">Click here to login</a>
+									 </div>
+								</div>
+							{{/if}} -->
+						</div>
+
+						<div class="col-md-6 clearfix">
+							<div class="table-responsive">
+								<h4>Cart Totals</h4>
+
+								<table class="table cart">
+									<tbody>
+										<tr class="cart_item">
+											<td class="cart-product-name">
+												<strong>Cart Subtotal</strong>
+											</td>
+
+											<td class="cart-product-name">
+												<span class="amount color">{{totalPrice}} $</span>
+											</td>
+										</tr>
+										<tr class="cart_item">
+											<td class="cart-product-name">
+												<strong>Shipping</strong>
+											</td>
+
+											<td class="cart-product-name">
+												<span class="amount">Free Delivery</span>
+											</td>
+										</tr>
+										<tr class="cart_item">
+											<td class="cart-product-name">
+												<strong>Total</strong>
+											</td>
+
+											<td class="cart-product-name">
+												<span class="amount color lead"><strong>{{totalPrice}} $</strong></span>
+											</td>
+										</tr>
+									</tbody>
+
+								</table>
+
+							</div>
+						</div>
+					</div>
+					{{else}}
+						<div class="center">
+							<img src="/assets/images/shop/shopping-cart-icon.png" alt="shopping cart empty" class="">
+							<h2 class="text-uppercase">Shopping Cart is Empty</h2>
+							<h5>You have no items in your shopping cart.</h5>
+						</div>
+					{{/if}}
+
+
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+
+
+{{#contentFor "pageScripts"}}
+
+<script type="text/javascript">
+	$('.spinner1').spinner();
+</script>
+
+{{/contentFor}}

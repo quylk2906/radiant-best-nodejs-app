@@ -1,0 +1,620 @@
+<!-- Top Bar
+============================================= -->
+<div id="top-bar">
+    <div class="col_half fright col_last nobottommargin">
+       <div id="top-social">
+          <ul>
+             <li><a href="https://www.facebook.com/quylk.uit" class="si-facebook" target="_blank" ><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook</span></a></li>
+             <li><a href="#" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
+             <li><a href="#" class="si-dribbble"><span class="ts-icon"><i class="icon-dribbble"></i></span><span class="ts-text">Dribbble</span></a></li>
+             <li><a href="https://github.com/quylk2906" class="si-github" target="_blank"><span class="ts-icon"><i class="icon-github-circled"></i></span><span class="ts-text">Github</span></a></li>
+             <li><a href="#" class="si-pinterest"><span class="ts-icon"><i class="icon-pinterest"></i></span><span class="ts-text">Pinterest</span></a></li>
+             <li><a href="https://www.instagram.com/quylk2906/" class="si-instagram" target="_blank"><span class="ts-icon"><i class="icon-instagram2"></i></span><span class="ts-text">Instagram</span></a></li>
+             <li><a href="tel:+84963878723" class="si-call"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text">0963878723</span></a></li>
+             <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=quylk2906@gmail.com" "email me" target="_blank" class="si-email3"><span class="ts-icon"><i class="icon-email3"></i></span><span class="ts-text">quylk2906@gmail.com</span></a></li>
+          </ul>
+       </div>
+    </div>
+ </div>
+
+<!-- #top-bar end -->
+<!-- <header id="header" class="full-header transparent-header dark" data-sticky-class="not-dark"> -->
+<header id="header" class="full-header">
+   <div id="header-wrap">
+      <div class="container clearfix">
+           <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+           <!-- Logo
+         ============================================= -->
+           <div id="logo">
+               <a href="/" class="standard-logo" data-dark-logo="/assets/images/logo-dark.png" data-sticky-logo="/assets/images/logo-media.png" data-mobile-logo="/assets/images/logo-media.png">
+                   <img src="/assets/images/logo.png" alt="Mean Logo">
+               </a>
+               <a href="/" class="retina-logo" data-dark-logo="/assets/images/logo-dark@2x.png" data-sticky-logo="/assets/images/logo-media@2x.png" data-mobile-logo="/assets/images/logo-media@2x.png">
+                   <img src="/assets/images/logo@2x.png" alt="Mean Logo">
+               </a>
+           </div>
+           {{#if login}}
+           <div id="top-account" class="dropdown">
+               <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-user"></i><i class="icon-angle-down"></i></a>
+               <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                  <li><a href="/users/profile">Profile</a></li>
+                  <li><a href="#">Messages <span class="badge">5</span></a></li>
+                  <li><a href="/users/profile">Settings</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="/users/logout">Logout <i class="icon-signout"></i></a></li>
+               </ul>
+            </div>
+            {{/if}}
+           <!-- #logo end -->
+
+           <!-- Primary Navigation
+         ============================================= -->
+           <nav id="primary-menu">
+               <ul>
+                   <li class="{{#if isHome}} current{{/if}}" >
+                      <a href="/">
+                          <div>Home</div>
+                      </a>
+                   </li>
+                   <li class="mega-menu {{#if isContact}} current{{/if}}">
+                      <a href="/contact">
+                          <div>Contact</div>
+                      </a>
+                      <div class="mega-menu-content style-2 clearfix">
+                          <ul class="mega-menu-column col-md-3">
+                              <li>
+                                   <div class="widget visible-lg visible-md clearfix">
+                                       <h4>Our Location</h4>
+                                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2296728317087!2d106.80157531527034!3d10.870128260428432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDUyJzEyLjQiTiAxMDbCsDQ4JzEzLjYiRQ!5e0!3m2!1sen!2s!4v1491636538788" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                   </div>
+                              </li>
+                          </ul>
+                          <ul class="mega-menu-column col-md-6">
+                              <li>
+                                   <div class="widget clearfix">
+                                       <h4>Send us a Quick Email</h4>
+                                       <!-- contact-widget -->
+                                       <div class="contact-widget" data-loader="button">
+                                          <div class="contact-form-result"></div>
+                                          <form class="nobottommargin" name="template-contactform" action="/send-feedback" method="post">
+                                               <div class="col_half">
+                                                   <div class="col_full">
+                                                      <input type="text" name="template-contactform-name" value="" class="typeahead sm-form-control tt-input required" placeholder="Name" />
+                                                   </div>
+                                                   <div class="col_full">
+                                                      <input type="email" name="template-contactform-email" value="" class="typeahead sm-form-control tt-input required" placeholder="Email" />
+                                                   </div>
+                                                   <div class="col_full nobottommargin">
+                                                      <input type="text" name="template-contactform-phone" value="" class="typeahead sm-form-control tt-input required" placeholder="Phone" />
+                                                   </div>
+                                               </div>
+
+                                               <div class="col_half col_last">
+                                                   <div class="col_full">
+                                                      <input type="text" name="template-contactform-subject" value="" class="typeahead sm-form-control tt-input required" placeholder="Subject" />
+                                                   </div>
+                                                   <textarea class="typeahead sm-form-control tt-input required" name="template-contactform-message" rows="4" cols="30" placeholder="Enter your Message"></textarea>
+                                               </div>
+
+                                               <div class="clear"></div>
+                                              <!--  <div class="col_full hidden">
+                                                   <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="typeahead sm-form-control tt-input required" />
+                                               </div> -->
+
+                                               <div class="col_full">
+                                                   <button type="submit" class="button button-rounded button-reveal button-large button-green tright"><i class="icon-email2"></i><span>Send message</span></button>
+                                               </div>
+                                          </form>
+                                       </div>
+
+                                   </div>
+                              </li>
+                          </ul>
+                          <ul class="mega-menu-column col-md-3">
+                              <li>
+                                   <div class="widget clearfix">
+                                       <h4>Our Headquarters</h4>
+                                       <address>
+                                 <strong>Address:</strong><br> Thu Duc District<br> Tp HCM<br> VietNam<br>
+                             </address>
+                                       <abbr title="Phone Number"><strong>Phone:</strong></abbr> 0963 8787 23<br>
+                                       <!--<abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>-->
+                                       <abbr title="Email Address"><strong>Email:</strong></abbr> quylk2906@gmail.com
+                                       <div class="bottommargin-sm"></div>
+                                       <a href="https://www.facebook.com/quylk.uit" class="social-icon si-light si-facebook" title="Facebook" target="_blank">
+                                          <i class="icon-facebook"></i>
+                                          <i class="icon-facebook"></i>
+                                       </a>
+                                       <a href="#" class="social-icon si-light si-facebook" title="Twitter">
+                                          <i class="icon-twitter"></i>
+                                          <i class="icon-twitter"></i>
+                                       </a>
+                                       <a href="https://github.com/quylk2906" class="social-icon si-light si-facebook" title="Github" target="_blank">
+                                          <i class="icon-github"></i>
+                                          <i class="icon-github"></i>
+                                       </a>
+                                       <a href="https://www.instagram.com/quylk2906/" class="social-icon si-light si-facebook" title="Instagram" target="_blank">
+                                          <i class="icon-instagram"></i>
+                                          <i class="icon-instagram"></i>
+                                       </a>
+                                       <a href="#" class="social-icon si-light si-facebook" title="Flickr">
+                                          <i class="icon-flickr"></i>
+                                          <i class="icon-flickr"></i>
+                                       </a>
+                                       <a href="tel:+84963878723" class="social-icon si-light si-facebook" title="Skype" target="_blank">
+                                          <i class="icon-skype"></i>
+                                          <i class="icon-skype"></i>
+                                       </a>
+
+                                   </div>
+                              </li>
+                          </ul>
+                      </div>
+                   </li>
+                   {{#if login}}
+                   {{else}}
+                   <li class="mega-menu {{#if isLogin}} current{{/if}}">
+                      <a href="/users/login">
+                          <div>Login</div>
+                      </a>
+                      <div class="mega-menu-content style-2 clearfix">
+                          <ul class="mega-menu-column col-md-4">
+                          </ul>
+                          <!--<ul class="mega-menu-column col-md-2">
+                     </ul>-->
+                          <ul class="mega-menu-column col-md-5">
+                              <li class="mega-menu-title">
+                                   <a href="/users/register">
+                                       <div>Don't have an Account? Register Now.</div>
+                                   </a>
+                                   <div class="col_full nobottommargin">
+                                       <a href="/users/register" class="button button-rounded button-reveal button-large button-green tright"><i class="icon-line-arrow-right"></i><span>Register Now!</span></a>
+                                   </div>
+                              </li>
+                          </ul>
+                          <ul class="mega-menu-column col-md-3">
+                              <li>
+                                   <div class="widget clearfix">
+                                       <h4>Login to your Account</h4>
+                                       <form id="login-form" name="login-form" class="nobottommargin" action="/users/login" method="post">
+                                          <div class="col_full">
+                                               <label for="login_form_email">Username or Email:</label>
+                                               <input class="typeahead sm-form-control tt-input" type="text" name="login_form_email" placeholder="johndoe or example@gmail.com" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;">
+                                          </div>
+
+                                          <div class="col_full">
+                                               <label for="login_form_password">Password:</label>
+                                               <input class="typeahead sm-form-control tt-input" type="password" name="login_form_password" placeholder="your password" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;">
+                                          </div>
+
+                                          <div class="col_full nobottommargin">
+                                               <button type="submit" class="button button-rounded button-reveal button-large button-green tright"><i class="icon-line-arrow-right"></i><span>Login</span></button>
+                                               <a href="#" class="fright">Forgot Password?</a>
+                                          </div>
+
+                                       </form>
+
+                                   </div>
+                              </li>
+                          </ul>
+                      </div>
+                   </li>
+                   {{/if}}
+                   <li class="mega-menu {{#if isShop}} current{{/if}}">
+                      <a href="/shop">
+                          <div>Shop</div>
+                      </a>
+                      <div class="mega-menu-content style-2 clearfix" style="background-image: url('/assets/images/shop/shop-menu.jpg'); background-repeat: no-repeat; background-position: right bottom;">
+                          <ul class="mega-menu-column col-lg-2 col-md-3">
+                              <li>
+                                   <div class="widget clearfix">
+                                      {{#if doc1}}
+                                       <div class="product iproduct clearfix">
+                                          <div class="product-image">
+                                               <a href="#"><img src="{{doc1.thumbnail}}" alt="{{doc1.name}}"></a>
+                                               <a href="/shop/item-details/{{doc1.category}}/{{doc1.title_meta}}"><img src="/assets/images/shop/thumbnail_over.png" alt="Gray Shoes"></a>
+                                               <!-- <div class="sale-flash">50% Off*</div> -->
+                                                  <div class="product-overlay">
+                                                     <a href="#" class="add-to-cart" data-id="{{doc1._id}}"><i class="icon-shopping-cart"></i><span> Add to Cart</span></a>
+                                                     <a href="#" class="item-quick-view"><i class="icon-zoom-in2"></i><span> Quick View</span></a>
+                                                 </div>
+                                          </div>
+                                           
+                                          <div class="product-desc nobottompadding center">
+                                               <div class="product-title">
+                                                   <h3><a href="#">{{doc1.name}}</a></h3>
+                                               </div>
+                                               <div class="product-price">
+                                                   <!-- <del>$24.99</del> -->
+                                                   <ins>{{doc1.price}} VND</ins>
+                                               </div>
+                                          </div>
+                                       </div>
+                                       {{/if}}   
+                                   </div>
+                              </li>
+                          </ul>
+                          <ul class="mega-menu-column col-md-3">
+                              <li>
+                                   <div class="widget clearfix">
+                                       <h4 class="highlight-me">Popular Item</h4>
+                                       <div class="widget-last-view">
+                                          {{#each doc3}}
+                                            <div class="spost clearfix">
+                                               <div class="entry-image">
+                                                   <a href="/shop/item-details/{{this.category}}/{{this.title_meta}}"><img src="{{this.thumbnail}}" alt="Image"></a>
+                                               </div>
+                                               <div class="entry-c">
+                                                   <div class="entry-title">
+                                                      <h4><a href="/shop/item-details/{{this.category}}/{{this.title_meta}}">{{this.name}}</a></h4>
+                                                   </div>
+                                                   <ul class="entry-meta">
+                                                      <li class="color">{{this.price}} VND</li>
+                                                      <li>
+                                                      {{#times this.rate '<i class="icon-star3"></i>'}}
+                                                        {{this}}
+                                                     {{/times}} </li>
+                                                   </ul>
+                                               </div>
+                                            </div>
+                                          {{/each}}
+                                       </div>
+
+                                   </div>
+                              </li>
+                          </ul>
+                          <ul class="mega-menu-column col-md-2">
+                              <li class="mega-menu-title">
+                                   <a href="#">
+                                       <div>Categories</div>
+                                   </a>
+                                   <ul>
+                                       <li>
+                                          <a href="#">
+                                               <div><i class="icon-t-shirt"></i>Men's Shirts</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div><i class="icon-laptop2"></i>Women's Accessories</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div><i class="icon-clock2"></i>Branded Watches</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div><i class="icon-plane"></i>Innerwear &amp; Lingerie</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div><i class="icon-barbell"></i>Belts &amp; Backpacks</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div><i class="icon-heart3"></i>Gym &amp; Sportswear</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div><i class="icon-film"></i>Personal Grooming</div>
+                                          </a>
+                                       </li>
+                                   </ul>
+                              </li>
+                          </ul>
+                          <ul class="mega-menu-column col-md-2 noleftborder">
+                              <li class="mega-menu-title">
+                                   <a href="#">
+                                       <div>Popular Brands</div>
+                                   </a>
+                                   <ul>
+                                       <li>
+                                          <a href="#">
+                                               <div>United Colors of Benetton</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div>Burton Menswear London</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div>Calvin Clein Jeans</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div>Dorothy Perkins</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div>Tommy Hilfiger</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div>Gucci</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div>Armani</div>
+                                          </a>
+                                       </li>
+                                   </ul>
+                              </li>
+                          </ul>
+                      </div>
+                   </li>
+                   <li class="mega-menu {{#if isService}} current{{/if}}">
+                      <a href="/service">
+                          <div>Service</div>
+                      </a>
+                   </li>
+                   <li class="mega-menu {{#if isPortfolio}} current{{/if}}">
+                      <a href="/portfolio">
+                          <div>Portfolio</div>
+                      </a>
+                   </li>
+                   <li class="mega-menu {{#if isBlog}} current{{/if}}">
+                      <a href="/blog">
+                          <div>Blog</div>
+                      </a>
+                      <div class="mega-menu-content style-2 clearfix">
+                          <ul class="mega-menu-column col-md-2">
+                              <li>
+                                   <div class="widget clearfix">
+                                       <h4>Recently Posted</h4>
+                                       <div class="ipost clearfix">
+                                          <div class="entry-image">
+                                               <a href="#"><img class="image_fade" src="/assets/images/magazine/thumb/1.jpg" alt="Image"></a>
+                                          </div>
+                                          <div class="entry-title">
+                                               <h3><a href="blog-single.html">Truth About Extreme Budget Travel</a></h3>
+                                          </div>
+                                          <ul class="entry-meta clearfix">
+                                               <li><i class="icon-calendar3"></i> 13th Jun 2014</li>
+                                               <li><i class="icon-comments"></i> 53</li>
+                                          </ul>
+                                       </div>
+
+                                   </div>
+                              </li>
+                          </ul>
+                          <ul class="mega-menu-column col-md-3">
+                              <li>
+                                   <div class="widget clearfix">
+
+                                       <h4>Popular Posts</h4>
+
+                                       <div>
+                                          <div class="spost clearfix">
+                                               <div class="entry-image">
+                                                   <a href="#" class="nobg"><img class="img-circle" src="/assets/images/magazine/small/2.jpg" alt=""></a>
+                                               </div>
+                                               <div class="entry-c">
+                                                   <div class="entry-title">
+                                                      <h4><a href="#">Elit Assumenda vel amet dolorum quasi</a></h4>
+                                                   </div>
+                                                   <ul class="entry-meta">
+                                                      <li><i class="icon-comments-alt"></i> 24 Comments</li>
+                                                   </ul>
+                                               </div>
+                                          </div>
+
+                                          <div class="spost clearfix">
+                                               <div class="entry-image">
+                                                   <a href="#" class="nobg"><img class="img-circle" src="/assets/images/magazine/small/1.jpg" alt=""></a>
+                                               </div>
+                                               <div class="entry-c">
+                                                   <div class="entry-title">
+                                                      <h4><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                                   </div>
+                                                   <ul class="entry-meta">
+                                                      <li><i class="icon-comments-alt"></i> 19 Comments</li>
+                                                   </ul>
+                                               </div>
+                                          </div>
+
+                                          <div class="spost clearfix">
+                                               <div class="entry-image">
+                                                   <a href="#" class="nobg"><img class="img-circle" src="/assets/images/magazine/small/3.jpg" alt=""></a>
+                                               </div>
+                                               <div class="entry-c">
+                                                   <div class="entry-title">
+                                                      <h4><a href="#">Debitis nihil placeat, illum est nisi</a></h4>
+                                                   </div>
+                                                   <ul class="entry-meta">
+                                                      <li><i class="icon-comments-alt"></i> 35 Comments</li>
+                                                   </ul>
+                                               </div>
+                                          </div>
+                                       </div>
+
+                                   </div>
+                              </li>
+                          </ul>
+                          <ul class="mega-menu-column col-md-2">
+                              <li class="mega-menu-title">
+                                   <a href="#">
+                                       <div>Categories</div>
+                                   </a>
+                                   <ul>
+                                       <li>
+                                          <a href="#">
+                                               <div><i class="icon-t-shirt"></i>Fashion</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div><i class="icon-laptop2"></i>Technology</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div><i class="icon-clock2"></i>Lifestyle</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div><i class="icon-plane"></i>Travel</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div><i class="icon-barbell"></i>Sport</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div><i class="icon-heart3"></i>Health</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div><i class="icon-film"></i>Videos</div>
+                                          </a>
+                                       </li>
+                                   </ul>
+                              </li>
+                          </ul>
+                          <ul class="mega-menu-column col-md-2">
+                              <li class="mega-menu-title">
+                                   <a href="#">
+                                       <div>Archives</div>
+                                   </a>
+                                   <ul>
+                                       <li>
+                                          <a href="#">
+                                               <div>January 2016</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div>December 2015</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div>November 2015</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div>October 2015</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div>September 2015</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div>August 2015</div>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#">
+                                               <div>July 2015</div>
+                                          </a>
+                                       </li>
+                                   </ul>
+                              </li>
+                          </ul>
+                          <ul class="mega-menu-column col-md-3">
+                              <li>
+                                   <div class="widget clearfix">
+                                       <div class="alert alert-info nobottommargin">Use Bootstrap Grid to create the Mega Menu Columns which allows you to Flexibly use Mixed Width Columns and Widgets of all Sizes.</div>
+                                   </div>
+
+                                   <div class="widget clearfix">
+
+                                       <h4>Tag Cloud</h4>
+
+                                       <div class="tagcloud">
+                                          <a href="#">general</a>
+                                          <a href="#">videos</a>
+                                          <a href="#">music</a>
+                                          <a href="#">media</a>
+                                          <a href="#">photography</a>
+                                          <a href="#">parallax</a>
+                                          <a href="#">ecommerce</a>
+                                          <a href="#">terms</a>
+                                          <a href="#">coupons</a>
+                                          <a href="#">modern</a>
+                                          <a href="#">clean</a>
+                                          <a href="#">medical</a>
+                                          <a href="#">agency</a>
+                                          <a href="#">travel</a>
+                                       </div>
+
+                                   </div>
+                              </li>
+                          </ul>
+                      </div>
+                   </li>
+
+               </ul>
+
+               <!-- Top Cart
+            ============================================= -->
+               <div id="top-cart">
+                   <a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i>{{#if session.cart.totalQty}}<span>{{session.cart.totalQty}}</span>{{/if}}</a>
+                   <div class="top-cart-content">
+                      <div class="top-cart-title">
+                          <h4>Shopping Cart</h4>
+                      </div>
+                      <div class="top-cart-items" id="cart-ajax"> 
+                      {{#if session.cart}}
+                        {{#each session.cart.items}}
+                              <div class="top-cart-item clearfix">
+                                <div class="top-cart-item-image">
+                                     <a href="/shop/item-details/{{this.item.category}}/{{this.item.title_meta}}"><img src="{{this.item.image}}" alt="{{this.item.name}}" /></a>
+                                </div>
+                                <div class="top-cart-item-desc">
+                                     <a href="/shop/item-details/{{this.item.category}}/{{this.item.title_meta}}">{{#sliceString this.item.name 18}}{{/sliceString}}</a>
+                                     <span class="top-cart-item-price">$ {{this.item.price}}</span>
+                                     <span class="top-cart-item-quantity">x {{this.qty}}</span>
+                                </div>
+                            </div>
+                          {{/each}}
+                      {{else}}
+                        <div class="center">
+                          <img src="/assets/images/shop/shopping-cart-icon.png" alt="shopping cart empty" class="">
+                          <h4 class="text-uppercase">Shopping Cart is Empty</h4>
+                        </div>
+                      {{/if}}
+                        
+                      </div>
+                      <div class="top-cart-action clearfix">
+                          <a href="/shop/cart" class="button button-border button-circle button-green button-small nomargin fright">View Cart</a>
+                          <span class="fleft top-checkout-price">$ {{session.cart.totalPrice}}</span>
+                      </div>
+                   </div>
+               </div>
+               <!-- #top-cart end -->
+
+               <!-- Top Search
+            ============================================= -->
+               <div id="top-search">
+                   <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+                   <form action="/shop/search-result/by-name/" method="post">
+                      <input type="text" name="keyword" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+                   </form>
+               </div>
+               <!-- #top-search end -->
+           </nav>
+           <!-- #primary-menu end -->
+      </div>
+
+  </div>
+
+</header>

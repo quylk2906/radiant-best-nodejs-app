@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <!-- Stylesheets
+	============================================= -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700,800,900|Permanent%2BMarker|Roboto%3A400%2C100%2C300%2C500%2C700%2C900" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" />
+
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+    <!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
+
+
+    <!-- Document Title
+	============================================= -->
+    <title>Home Page</title>
+
+    <style>
+       .dropdown-toggle {
+         border: none
+       }
+        .demos-filter {
+            margin: 0;
+            text-align: right;
+        }
+
+        .demos-filter li {
+            list-style: none;
+            margin: 10px 0px;
+        }
+
+        .demos-filter li a {
+            display: block;
+            border: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #444;
+        }
+
+        .demos-filter li a:hover,
+        .demos-filter li.activeFilter a {
+            color: #1ABC9C;
+        }
+
+        @media (max-width: 991px) {
+            .demos-filter {
+                text-align: center;
+            }
+            .demos-filter li {
+                float: left;
+                width: 33.3%;
+                padding: 0 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .demos-filter li {
+                width: 50%;
+            }
+        }
+
+        .revo-slider-emphasis-text {
+            font-size: 64px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            font-family: 'Raleway', sans-serif;
+            padding: 15px 20px;
+            border-top: 2px solid #FFF;
+            border-bottom: 2px solid #FFF;
+        }
+
+        .revo-slider-desc-text {
+            font-size: 20px;
+            font-family: 'Lato', sans-serif;
+            width: 650px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .revo-slider-caps-text {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .tp-video-play-button {
+            display: none !important;
+        }
+
+        .tp-caption {
+            white-space: nowrap;
+        }
+
+        .tp-caption.SleekLanding-BottomText,
+        .SleekLanding-BottomText,
+        .social-text,
+        .SleekLanding-Social {
+            color: #FFF;
+        }
+        /* data-index number of your Slide */
+
+        [data-slideactive="rs-1493"] .tp-caption.SleekLanding-BottomText,
+        [data-slideactive="rs-1493"] .SleekLanding-BottomText,
+        [data-slideactive="rs-1493"] .social-text,
+        [data-slideactive="rs-1493"] .SleekLanding-Social {
+            color: #444 !important;
+        }
+
+        [data-slideactive="rs-1493"] .hermes .tp-bullet {
+            box-shadow: inset 0 0 0 2px #333;
+        }
+
+        [data-slideactive="rs-1493"] .hermes .tp-bullet:after {
+            background-color: #333
+        }
+    </style>
+
+</head>
+
+<body class="stretched">
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+        <!-- Header
+		============================================= -->
+        <header id="header" class="full-header transparent-header dark" data-sticky-class="not-dark">
+            <div id="header-wrap">
+                <div class="container clearfix">
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+                    <!-- Logo
+     					============================================= -->
+                    <div id="logo">
+                        <a href="/" class="standard-logo" data-dark-logo="/assets/images/logo-dark.png" data-sticky-logo="/assets/images/logo-media.png" data-mobile-logo="/assets/images/logo-media.png">
+                            <img src="/assets/images/logo.png" alt="Mean Logo">
+                        </a>
+                        <a href="/" class="retina-logo" data-dark-logo="/assets/images/logo-dark@2x.png" data-sticky-logo="/assets/images/logo-media@2x.png" data-mobile-logo="/assets/images/logo-media@2x.png">
+                            <img src="/assets/images/logo@2x.png" alt="Mean Logo">
+                        </a>
+                    </div>
+                    {{#if login}}
+                    <div id="top-account" class="dropdown">
+        						<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-user"></i><i class="icon-angle-down"></i></a>
+        						<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+        							<li><a href="users/profile">Profile</a></li>
+        							<li><a href="#">Messages <span class="badge">5</span></a></li>
+        							<li><a href="/users/profile">Settings</a></li>
+        							<li role="separator" class="divider"></li>
+        							<li><a href="/users/logout">Logout <i class="icon-signout"></i></a></li>
+        						</ul>
+        					</div>
+                     {{/if}}
+                    <!-- #logo end -->
+
+                    <!-- Primary Navigation
+           					============================================= -->
+                    <nav id="primary-menu">
+                       <ul>
+                           <li class="{{#if isHome}} current{{/if}}" >
+                              <a href="/">
+                                  <div>Home</div>
+                              </a>
+                           </li>
+                           <li class="mega-menu {{#if isContact}} current{{/if}}">
+                              <a href="/contact">
+                                  <div>Contact</div>
+                              </a>
+                              <div class="mega-menu-content style-2 clearfix">
+                                  <ul class="mega-menu-column col-md-3">
+                                      <li>
+                                           <div class="widget visible-lg visible-md clearfix">
+                                               <h4>Our Location</h4>
+                                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2296728317087!2d106.80157531527034!3d10.870128260428432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDUyJzEyLjQiTiAxMDbCsDQ4JzEzLjYiRQ!5e0!3m2!1sen!2s!4v1491636538788" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                           </div>
+                                      </li>
+                                  </ul>
+                                  <ul class="mega-menu-column col-md-6">
+                                      <li>
+                                           <div class="widget clearfix">
+                                               <h4>Send us a Quick Email</h4>
+                                               <!-- contact-widget -->
+                                               <div class="contact-widget" data-loader="button">
+                                                  <div class="contact-form-result"></div>
+                                                  <form class="nobottommargin" name="template-contactform" action="/send-feedback" method="post">
+                                                       <div class="col_half">
+                                                           <div class="col_full">
+                                                              <input type="text" name="template-contactform-name" value="" class="typeahead sm-form-control tt-input required" placeholder="Name" />
+                                                           </div>
+                                                           <div class="col_full">
+                                                              <input type="email" name="template-contactform-email" value="" class="typeahead sm-form-control tt-input required" placeholder="Email" />
+                                                           </div>
+                                                           <div class="col_full nobottommargin">
+                                                              <input type="text" name="template-contactform-phone" value="" class="typeahead sm-form-control tt-input required" placeholder="Phone" />
+                                                           </div>
+                                                       </div>
+
+                                                       <div class="col_half col_last">
+                                                           <div class="col_full">
+                                                              <input type="text" name="template-contactform-subject" value="" class="typeahead sm-form-control tt-input required" placeholder="Subject" />
+                                                           </div>
+                                                           <textarea class="typeahead sm-form-control tt-input required" name="template-contactform-message" rows="4" cols="30" placeholder="Enter your Message"></textarea>
+                                                       </div>
+
+                                                       <div class="clear"></div>
+                                                      <!--  <div class="col_full hidden">
+                                                           <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="typeahead sm-form-control tt-input required" />
+                                                       </div> -->
+
+                                                       <div class="col_full">
+                                                           <button type="submit" class="button button-rounded button-reveal button-large button-green tright"><i class="icon-email2"></i><span>Send message</span></button>
+                                                       </div>
+                                                  </form>
+                                               </div>
+
+                                           </div>
+                                      </li>
+                                  </ul>
+                                  <ul class="mega-menu-column col-md-3">
+                                      <li>
+                                           <div class="widget clearfix">
+                                               <h4>Our Headquarters</h4>
+                                               <address>
+                                         <strong>Address:</strong><br> Thu Duc District<br> Tp HCM<br> VietNam<br>
+                                     </address>
+                                               <abbr title="Phone Number"><strong>Phone:</strong></abbr> 0963 8787 23<br>
+                                               <!--<abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>-->
+                                               <abbr title="Email Address"><strong>Email:</strong></abbr> quylk2906@gmail.com
+                                               <div class="bottommargin-sm"></div>
+                                               <a href="https://www.facebook.com/quylk.uit" class="social-icon si-light si-facebook" title="Facebook" target="_blank">
+                                                  <i class="icon-facebook"></i>
+                                                  <i class="icon-facebook"></i>
+                                               </a>
+                                               <a href="#" class="social-icon si-light si-facebook" title="Twitter">
+                                                  <i class="icon-twitter"></i>
+                                                  <i class="icon-twitter"></i>
+                                               </a>
+                                               <a href="https://github.com/quylk2906" class="social-icon si-light si-facebook" title="Github" target="_blank">
+                                                  <i class="icon-github"></i>
+                                                  <i class="icon-github"></i>
+                                               </a>
+                                               <a href="https://www.instagram.com/quylk2906/" class="social-icon si-light si-facebook" title="Instagram" target="_blank">
+                                                  <i class="icon-instagram"></i>
+                                                  <i class="icon-instagram"></i>
+                                               </a>
+                                               <a href="#" class="social-icon si-light si-facebook" title="Flickr">
+                                                  <i class="icon-flickr"></i>
+                                                  <i class="icon-flickr"></i>
+                                               </a>
+                                               <a href="tel:+84963878723" class="social-icon si-light si-facebook" title="Skype" target="_blank">
+                                                  <i class="icon-skype"></i>
+                                                  <i class="icon-skype"></i>
+                                               </a>
+
+                                           </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                           </li>
+                           {{#if login}}
+                           {{else}}
+                           <li class="mega-menu {{#if isLogin}} current{{/if}}">
+                              <a href="/users/login">
+                                  <div>Login</div>
+                              </a>
+                              <div class="mega-menu-content style-2 clearfix">
+                                  <ul class="mega-menu-column col-md-4">
+                                  </ul>
+                                  <!--<ul class="mega-menu-column col-md-2">
+                             </ul>-->
+                                  <ul class="mega-menu-column col-md-5">
+                                      <li class="mega-menu-title">
+                                           <a href="/users/register">
+                                               <div>Don't have an Account? Register Now.</div>
+                                           </a>
+                                           <div class="col_full nobottommargin">
+                                               <a href="/users/register" class="button button-rounded button-reveal button-large button-green tright"><i class="icon-line-arrow-right"></i><span>Register Now!</span></a>
+                                           </div>
+                                      </li>
+                                  </ul>
+                                  <ul class="mega-menu-column col-md-3">
+                                      <li>
+                                           <div class="widget clearfix">
+                                               <h4>Login to your Account</h4>
+                                               <form id="login-form" name="login-form" class="nobottommargin" action="/users/login" method="post">
+                                                  <div class="col_full">
+                                                       <label for="login_form_email">Username or Email:</label>
+                                                       <input class="typeahead sm-form-control tt-input" type="text" name="login_form_email" placeholder="johndoe or example@gmail.com" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;">
+                                                  </div>
+
+                                                  <div class="col_full">
+                                                       <label for="login_form_password">Password:</label>
+                                                       <input class="typeahead sm-form-control tt-input" type="password" name="login_form_password" placeholder="your password" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;">
+                                                  </div>
+
+                                                  <div class="col_full nobottommargin">
+                                                       <button type="submit" class="button button-rounded button-reveal button-large button-green tright"><i class="icon-line-arrow-right"></i><span>Login</span></button>
+                                                       <a href="#" class="fright">Forgot Password?</a>
+                                                  </div>
+
+                                               </form>
+
+                                           </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                           </li>
+                           {{/if}}
+                           <li class="mega-menu {{#if isShop}} current{{/if}}">
+                              <a href="/shop">
+                                  <div>Shop</div>
+                              </a>
+                              <div class="mega-menu-content style-2 clearfix" style="background-image: url('/assets/images/shop/shop-menu.jpg'); background-repeat: no-repeat; background-position: right bottom;">
+                                  <ul class="mega-menu-column col-lg-2 col-md-3">
+                                      <li>
+                                           <div class="widget clearfix">
+                                              {{#if doc1}}
+                                               <div class="product iproduct clearfix">
+                                                  <div class="product-image">
+                                                       <a href="#"><img src="{{doc1.thumbnail}}" alt="{{doc1.name}}"></a>
+                                                       <a href="/shop/item-details/{{doc1.category}}/{{doc1.title_meta}}"><img src="/assets/images/shop/thumbnail_over.png" alt="Gray Shoes"></a>
+                                                       <!-- <div class="sale-flash">50% Off*</div> -->
+                                                          <div class="product-overlay">
+                                                             <a href="#" class="add-to-cart" data-id="{{doc1._id}}"><i class="icon-shopping-cart"></i><span> Add to Cart</span></a>
+                                                             <a href="#" class="item-quick-view"><i class="icon-zoom-in2"></i><span> Quick View</span></a>
+                                                         </div>
+                                                  </div>
+                                                   
+                                                  <div class="product-desc nobottompadding center">
+                                                       <div class="product-title">
+                                                           <h3><a href="#">{{doc1.name}}</a></h3>
+                                                       </div>
+                                                       <div class="product-price">
+                                                           <!-- <del>$24.99</del> -->
+                                                           <ins>{{doc1.price}} VND</ins>
+                                                       </div>
+                                                  </div>
+                                               </div>
+                                               {{/if}}   
+                                           </div>
+                                      </li>
+                                  </ul>
+                                  <ul class="mega-menu-column col-md-3">
+                                      <li>
+                                           <div class="widget clearfix">
+                                               <h4 class="highlight-me">Popular Item</h4>
+                                               <div class="widget-last-view">
+                                                  {{#each doc3}}
+                                                    <div class="spost clearfix">
+                                                       <div class="entry-image">
+                                                           <a href="/shop/item-details/{{this.category}}/{{this.title_meta}}"><img src="{{this.thumbnail}}" alt="Image"></a>
+                                                       </div>
+                                                       <div class="entry-c">
+                                                           <div class="entry-title">
+                                                              <h4><a href="/shop/item-details/{{this.category}}/{{this.title_meta}}">{{this.name}}</a></h4>
+                                                           </div>
+                                                           <ul class="entry-meta">
+                                                              <li class="color">{{this.price}} VND</li>
+                                                              <li>
+                                                              {{#times this.rate '<i class="icon-star3"></i>'}}
+                                                                {{this}}
+                                                             {{/times}} </li>
+                                                           </ul>
+                                                       </div>
+                                                    </div>
+                                                  {{/each}}
+                                               </div>
+
+                                           </div>
+                                      </li>
+                                  </ul>
+                                  <ul class="mega-menu-column col-md-2">
+                                      <li class="mega-menu-title">
+                                           <a href="#">
+                                               <div>Categories</div>
+                                           </a>
+                                           <ul>
+                                               <li>
+                                                  <a href="#">
+                                                       <div><i class="icon-t-shirt"></i>Men's Shirts</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div><i class="icon-laptop2"></i>Women's Accessories</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div><i class="icon-clock2"></i>Branded Watches</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div><i class="icon-plane"></i>Innerwear &amp; Lingerie</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div><i class="icon-barbell"></i>Belts &amp; Backpacks</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div><i class="icon-heart3"></i>Gym &amp; Sportswear</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div><i class="icon-film"></i>Personal Grooming</div>
+                                                  </a>
+                                               </li>
+                                           </ul>
+                                      </li>
+                                  </ul>
+                                  <ul class="mega-menu-column col-md-2 noleftborder">
+                                      <li class="mega-menu-title">
+                                           <a href="#">
+                                               <div>Popular Brands</div>
+                                           </a>
+                                           <ul>
+                                               <li>
+                                                  <a href="#">
+                                                       <div>United Colors of Benetton</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div>Burton Menswear London</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div>Calvin Clein Jeans</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div>Dorothy Perkins</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div>Tommy Hilfiger</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div>Gucci</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div>Armani</div>
+                                                  </a>
+                                               </li>
+                                           </ul>
+                                      </li>
+                                  </ul>
+                              </div>
+                           </li>
+                           <li class="mega-menu {{#if isService}} current{{/if}}">
+                              <a href="/service">
+                                  <div>Service</div>
+                              </a>
+                           </li>
+                           <li class="mega-menu {{#if isPortfolio}} current{{/if}}">
+                              <a href="/portfolio">
+                                  <div>Portfolio</div>
+                              </a>
+                           </li>
+                           <li class="mega-menu {{#if isBlog}} current{{/if}}">
+                              <a href="/blog">
+                                  <div>Blog</div>
+                              </a>
+                              <div class="mega-menu-content style-2 clearfix">
+                                  <ul class="mega-menu-column col-md-2">
+                                      <li>
+                                           <div class="widget clearfix">
+                                               <h4>Recently Posted</h4>
+                                               <div class="ipost clearfix">
+                                                  <div class="entry-image">
+                                                       <a href="#"><img class="image_fade" src="/assets/images/magazine/thumb/1.jpg" alt="Image"></a>
+                                                  </div>
+                                                  <div class="entry-title">
+                                                       <h3><a href="blog-single.html">Truth About Extreme Budget Travel</a></h3>
+                                                  </div>
+                                                  <ul class="entry-meta clearfix">
+                                                       <li><i class="icon-calendar3"></i> 13th Jun 2014</li>
+                                                       <li><i class="icon-comments"></i> 53</li>
+                                                  </ul>
+                                               </div>
+
+                                           </div>
+                                      </li>
+                                  </ul>
+                                  <ul class="mega-menu-column col-md-3">
+                                      <li>
+                                           <div class="widget clearfix">
+
+                                               <h4>Popular Posts</h4>
+
+                                               <div>
+                                                  <div class="spost clearfix">
+                                                       <div class="entry-image">
+                                                           <a href="#" class="nobg"><img class="img-circle" src="/assets/images/magazine/small/2.jpg" alt=""></a>
+                                                       </div>
+                                                       <div class="entry-c">
+                                                           <div class="entry-title">
+                                                              <h4><a href="#">Elit Assumenda vel amet dolorum quasi</a></h4>
+                                                           </div>
+                                                           <ul class="entry-meta">
+                                                              <li><i class="icon-comments-alt"></i> 24 Comments</li>
+                                                           </ul>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="spost clearfix">
+                                                       <div class="entry-image">
+                                                           <a href="#" class="nobg"><img class="img-circle" src="/assets/images/magazine/small/1.jpg" alt=""></a>
+                                                       </div>
+                                                       <div class="entry-c">
+                                                           <div class="entry-title">
+                                                              <h4><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                                           </div>
+                                                           <ul class="entry-meta">
+                                                              <li><i class="icon-comments-alt"></i> 19 Comments</li>
+                                                           </ul>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="spost clearfix">
+                                                       <div class="entry-image">
+                                                           <a href="#" class="nobg"><img class="img-circle" src="/assets/images/magazine/small/3.jpg" alt=""></a>
+                                                       </div>
+                                                       <div class="entry-c">
+                                                           <div class="entry-title">
+                                                              <h4><a href="#">Debitis nihil placeat, illum est nisi</a></h4>
+                                                           </div>
+                                                           <ul class="entry-meta">
+                                                              <li><i class="icon-comments-alt"></i> 35 Comments</li>
+                                                           </ul>
+                                                       </div>
+                                                  </div>
+                                               </div>
+
+                                           </div>
+                                      </li>
+                                  </ul>
+                                  <ul class="mega-menu-column col-md-2">
+                                      <li class="mega-menu-title">
+                                           <a href="#">
+                                               <div>Categories</div>
+                                           </a>
+                                           <ul>
+                                               <li>
+                                                  <a href="#">
+                                                       <div><i class="icon-t-shirt"></i>Fashion</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div><i class="icon-laptop2"></i>Technology</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div><i class="icon-clock2"></i>Lifestyle</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div><i class="icon-plane"></i>Travel</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div><i class="icon-barbell"></i>Sport</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div><i class="icon-heart3"></i>Health</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div><i class="icon-film"></i>Videos</div>
+                                                  </a>
+                                               </li>
+                                           </ul>
+                                      </li>
+                                  </ul>
+                                  <ul class="mega-menu-column col-md-2">
+                                      <li class="mega-menu-title">
+                                           <a href="#">
+                                               <div>Archives</div>
+                                           </a>
+                                           <ul>
+                                               <li>
+                                                  <a href="#">
+                                                       <div>January 2016</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div>December 2015</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div>November 2015</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div>October 2015</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div>September 2015</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div>August 2015</div>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="#">
+                                                       <div>July 2015</div>
+                                                  </a>
+                                               </li>
+                                           </ul>
+                                      </li>
+                                  </ul>
+                                  <ul class="mega-menu-column col-md-3">
+                                      <li>
+                                           <div class="widget clearfix">
+                                               <div class="alert alert-info nobottommargin">Use Bootstrap Grid to create the Mega Menu Columns which allows you to Flexibly use Mixed Width Columns and Widgets of all Sizes.</div>
+                                           </div>
+
+                                           <div class="widget clearfix">
+
+                                               <h4>Tag Cloud</h4>
+
+                                               <div class="tagcloud">
+                                                  <a href="#">general</a>
+                                                  <a href="#">videos</a>
+                                                  <a href="#">music</a>
+                                                  <a href="#">media</a>
+                                                  <a href="#">photography</a>
+                                                  <a href="#">parallax</a>
+                                                  <a href="#">ecommerce</a>
+                                                  <a href="#">terms</a>
+                                                  <a href="#">coupons</a>
+                                                  <a href="#">modern</a>
+                                                  <a href="#">clean</a>
+                                                  <a href="#">medical</a>
+                                                  <a href="#">agency</a>
+                                                  <a href="#">travel</a>
+                                               </div>
+
+                                           </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                           </li>
+
+                       </ul>
+
+                       <!-- Top Cart
+                    ============================================= -->
+                       <div id="top-cart">
+                           <a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i>{{#if session.cart.totalQty}}<span>{{session.cart.totalQty}}</span>{{/if}}</a>
+                           <div class="top-cart-content">
+                              <div class="top-cart-title">
+                                  <h4>Shopping Cart</h4>
+                              </div>
+                              <div class="top-cart-items" id="cart-ajax"> 
+                              {{#if session.cart}}
+                                {{#each session.cart.items}}
+                                      <div class="top-cart-item clearfix">
+                                        <div class="top-cart-item-image">
+                                             <a href="/shop/item-details/{{this.item.category}}/{{this.item.title_meta}}"><img src="{{this.item.image}}" alt="{{this.item.name}}" /></a>
+                                        </div>
+                                        <div class="top-cart-item-desc">
+                                             <a href="/shop/item-details/{{this.item.category}}/{{this.item.title_meta}}">{{#sliceString this.item.name 18}}{{/sliceString}}</a>
+                                             <span class="top-cart-item-price">$ {{this.item.price}}</span>
+                                             <span class="top-cart-item-quantity">x {{this.qty}}</span>
+                                        </div>
+                                    </div>
+                                  {{/each}}
+                              {{else}}
+                                <div class="center">
+                                  <img src="/assets/images/shop/shopping-cart-icon.png" alt="shopping cart empty" class="">
+                                  <h4 class="text-uppercase">Shopping Cart is Empty</h4>
+                                </div>
+                              {{/if}}
+                                
+                              </div>
+                              <div class="top-cart-action clearfix">
+                                  <a href="/shop/cart" class="button button-border button-circle button-green button-small nomargin fright">View Cart</a>
+                                  <span class="fleft top-checkout-price">$ {{session.cart.totalPrice}}</span>
+                              </div>
+                           </div>
+                       </div>
+                       <!-- #top-cart end -->
+
+                       <!-- Top Search
+                    ============================================= -->
+                       <div id="top-search">
+                           <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+                           <form action="/shop/search-result/by-name/" method="post">
+                              <input type="text" name="keyword" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+                           </form>
+                       </div>
+                       <!-- #top-search end -->
+                   </nav>
+                    <!-- #primary-menu end -->
+                </div>
+
+            </div>
+
+        </header>
+        <!-- #header end -->
+        <!-- Slider
+		============================================= -->
+
+        <section id="slider" class="slider-parallax full-screen force-full-screen with-header swiper_wrapper page-section clearfix">
+            <div id="rev_slider_429_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="sleek-landing-page" style="background-color:transparent;padding:0px;">
+                <!-- START REVOLUTION SLIDER 5.2.0 fullscreen mode -->
+                <div id="rev_slider_429_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.2.0">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-1491" class="dark" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1000" data-thumb="http://server.local/revslider/wp-content/uploads/"
+                            data-rotate="0" data-saveperformance="off" data-title="Solution" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/include/rs-plugin/demos/assets/images/dummy.png" style='background-color:#2aa2b0' alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1491-layer-1" data-x="['left','left','left','left']" data-hoffset="['45','45','45','20']" data-y="['top','top','top','top']" data-voffset="['30','30','30','30']" data-fontsize="['150','150','100','70']"
+                                data-lineheight="['150','150','100','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;s:1500;e:Power4.easeOut;" data-transform_out="y:top;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;"
+                                data-start="600" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 5; white-space: nowrap; font-size: 150px; line-height: 150px; font-weight: 900; color: rgba(0, 0, 0, 0.05);font-family:Lato;text-transform:left;">INNOVATIVE </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1491-layer-2" data-x="['left','left','left','left']" data-hoffset="['45','45','45','20']" data-y="['top','top','top','top']" data-voffset="['169','169','132','101']" data-fontsize="['150','150','100','70']"
+                                data-lineheight="['150','150','100','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;s:1500;e:Power4.easeOut;" data-transform_out="y:top;s:650;e:Power2.easeIn;s:650;e:Power2.easeIn;"
+                                data-start="700" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 6; white-space: nowrap; font-size: 150px; line-height: 150px; font-weight: 900; color: rgba(0, 0, 0, 0.05);font-family:Lato;text-transform:left;">RESPONSIVE </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1491-layer-3" data-x="['left','left','left','left']" data-hoffset="['45','45','45','20']" data-y="['top','top','top','top']" data-voffset="['308','308','235','172']" data-fontsize="['150','150','100','70']"
+                                data-lineheight="['150','150','100','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;s:1500;e:Power4.easeOut;" data-transform_out="y:top;s:800;e:Power2.easeIn;s:800;e:Power2.easeIn;"
+                                data-start="800" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; font-size: 150px; line-height: 150px; font-weight: 900; color: rgba(0, 0, 0, 0.05);font-family:Lato;text-transform:left;">VERSATILE </div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption SleekLanding-Title   tp-resizeme" id="slide-1491-layer-7" data-x="['left','left','left','left']" data-hoffset="['700','580','420','230']" data-y="['middle','middle','middle','middle']" data-voffset="['-99','-99','-99','-119']" data-fontsize="['35','35','35','25']"
+                                data-lineheight="['40','40','40','30']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;"
+                                data-start="900" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; white-space: nowrap; font-weight: 700;text-transform:left;">A Brand New<br/> Solution. </div>
+
+                            <!-- LAYER NR. 5 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1491-layer-8" data-x="['left','left','left','left']" data-hoffset="['700','580','420','230']" data-y="['middle','middle','middle','middle']" data-voffset="['1','1','1','-4']" data-width="['320','320','320','200']"
+                                data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;" data-start="1000"
+                                data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 9; min-width: 320px; max-width: 320px; white-space: normal; font-size: 15px; line-height: 24px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Lato;text-transform:left;">We take things to a totally new level with this highly usable and affordable app.<br/> You will love what you see once you do! </div>
+
+                            <!-- LAYER NR. 6 -->
+                            <div class="tp-caption SleekLanding-ButtonBG tp-shape tp-shapewrapper  tp-resizeme" id="slide-1491-layer-9" data-x="['left','left','left','left']" data-hoffset="['700','580','420','230']" data-y="['middle','middle','middle','middle']" data-voffset="['105','105','105','105']"
+                                data-width="230" data-height="50" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;"
+                                data-start="1100" data-responsive_offset="on" style="z-index: 10;font-family:Arial;text-transform:left;"> </div>
+
+                            <!-- LAYER NR. 7 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1491-layer-15" data-x="['right','right','right','right']" data-hoffset="['-100','-142','-149','23']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-304','-384','-376','-166']" data-width="none"
+                                data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;rZ:-90deg;s:1500;e:Power4.easeOut;" data-transform_out="y:top;rZ:45deg;s:1000;e:Power2.easeIn;s:1000;e:Power2.easeIn;" data-start="1200"
+                                data-responsive_offset="on" style="z-index: 11;text-transform:left;"><img src="assets/include/rs-plugin/demos/assets/images/dummy.png" alt="" width="760" height="1000" data-ww="['760px','760px','760','380px']" data-hh="['1000px','1000px','1000','500px']" data-lazyload="include/rs-plugin/demos/assets/images/coffee_cup.png"
+                                    data-no-retina> </div>
+
+                            <!-- LAYER NR. 8 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1491-layer-14" data-x="['right','right','right','right']" data-hoffset="['971','826','360','70']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['345','227','763','621']" data-width="none"
+                                data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;rZ:90deg;s:1500;e:Power4.easeOut;" data-transform_out="y:top;rZ:-40deg;s:1000;e:Power2.easeIn;s:1000;e:Power2.easeIn;" data-start="900"
+                                data-responsive_offset="on" style="z-index: 12;text-transform:left;"><img src="assets/include/rs-plugin/demos/assets/images/dummy.png" alt="" width="600" height="140" data-ww="['600px','600px','600px','300px']" data-hh="['140px','140px','140px','70px']" data-lazyload="include/rs-plugin/demos/assets/images/wood_pencil.png"
+                                    data-no-retina> </div>
+
+                            <!-- LAYER NR. 9 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1491-layer-16" data-x="['left','left','left','left']" data-hoffset="['-13','-50','13','24']" data-y="['top','top','top','top']" data-voffset="['552','564','690','589']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;rZ:45deg;s:1500;e:Power4.easeOut;" data-transform_out="y:top;rZ:-45deg;s:1100;e:Power2.easeIn;s:1100;e:Power2.easeIn;" data-start="1100" data-responsive_offset="on"
+                                style="z-index: 13;text-transform:left;"><img src="assets/include/rs-plugin/demos/assets/images/dummy.png" alt="" width="340" height="180" data-ww="['340px','340px','340px','200px']" data-hh="['180px','180px','180px','106px']" data-lazyload="include/rs-plugin/demos/assets/images/eraser_pink.png"
+                                    data-no-retina> </div>
+
+                            <!-- LAYER NR. 10 -->
+                            <div class="tp-caption SleekLanding-SmallTitle   tp-resizeme" id="slide-1491-layer-10" data-x="['left','left','left','left']" data-hoffset="['721','601','441','251']" data-y="['middle','middle','middle','middle']" data-voffset="['106','106','106','106']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;"
+                                data-start="1150" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 14; white-space: nowrap;text-transform:left;">GET OUR APP </div>
+
+                            <!-- LAYER NR. 11 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1491-layer-11" data-x="['left','left','left','left']" data-hoffset="['853','733','573','383']" data-y="['middle','middle','middle','middle']" data-voffset="['106','106','106','106']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:200;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;"
+                                data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;" data-start="1200" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 15; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400; color: rgba(0, 0, 0, 0.25);text-transform:left;cursor:pointer;"><i class="icon-apple"></i> </div>
+
+                            <!-- LAYER NR. 12 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1491-layer-12" data-x="['left','left','left','left']" data-hoffset="['888','768','608','418']" data-y="['middle','middle','middle','middle']" data-voffset="['105','105','105','105']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:200;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;"
+                                data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;" data-start="1250" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 16; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400; color: rgba(0, 0, 0, 0.25);text-transform:left;cursor:pointer;"><i class="icon-android"></i> </div>
+
+                            <!-- LAYER NR. 13 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-1491-layer-18" data-x="['center','center','center','center']" data-hoffset="['-104','-104','-134','-164']" data-y="['middle','middle','middle','middle']" data-voffset="['-37','-37','-27','-27']"
+                                data-width="['209','209','207','207']" data-height="['369','369','367','367']" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
+                                data-start="500" data-responsive_offset="on" style="z-index: 17;text-transform:left;background-color:rgba(51, 51, 51, 1.00);border-color:rgba(0, 0, 0, 0);">
+                            </div>
+
+                            <!-- LAYER NR. 14 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1491-layer-17" data-x="['center','center','center','center']" data-hoffset="['-104','-104','-134','-164']" data-y="['middle','middle','middle','middle']" data-voffset="['-37','-38','-27','-27']" data-width="none"
+                                data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[-100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="700" data-responsive_offset="on" style="z-index: 18;text-transform:left;"><img src="assets/include/rs-plugin/demos/assets/images/dummy.png" alt="" width="207" height="367" data-ww="['207px','207px','207','207px']" data-hh="['367px','367px','367','367px']" data-lazyload="include/rs-plugin/demos/assets/images/iphone_image1.jpg"
+                                    data-no-retina> </div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-1492" class="dark" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1000" data-thumb="http://server.local/revslider/wp-content/uploads/"
+                            data-rotate="0" data-saveperformance="off" data-title="Diversity" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/include/rs-plugin/demos/assets/images/dummy.png" style='background-color:#4f5057' alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1492-layer-1" data-x="['left','left','left','left']" data-hoffset="['45','45','45','20']" data-y="['top','top','top','top']" data-voffset="['30','30','30','30']" data-fontsize="['150','150','100','70']"
+                                data-lineheight="['150','150','100','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;s:1500;e:Power4.easeOut;" data-transform_out="y:top;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;"
+                                data-start="600" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 5; white-space: nowrap; font-size: 150px; line-height: 150px; font-weight: 900; color: rgba(0, 0, 0, 0.05);font-family:Lato;text-transform:left;">TONS OF </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1492-layer-2" data-x="['left','left','left','left']" data-hoffset="['45','45','45','20']" data-y="['top','top','top','top']" data-voffset="['169','169','132','101']" data-fontsize="['150','150','100','70']"
+                                data-lineheight="['150','150','100','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;s:1500;e:Power4.easeOut;" data-transform_out="y:top;s:650;e:Power2.easeIn;s:650;e:Power2.easeIn;"
+                                data-start="700" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 6; white-space: nowrap; font-size: 150px; line-height: 150px; font-weight: 900; color: rgba(0, 0, 0, 0.05);font-family:Lato;text-transform:left;">TEMPLATES </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1492-layer-3" data-x="['left','left','left','left']" data-hoffset="['45','45','45','20']" data-y="['top','top','top','top']" data-voffset="['308','308','235','172']" data-fontsize="['150','150','100','70']"
+                                data-lineheight="['150','150','100','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;s:1500;e:Power4.easeOut;" data-transform_out="y:top;s:800;e:Power2.easeIn;s:800;e:Power2.easeIn;"
+                                data-start="800" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; font-size: 150px; line-height: 150px; font-weight: 900; color: rgba(0, 0, 0, 0.05);font-family:Lato;text-transform:left;">INCLUDED </div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption SleekLanding-Title   tp-resizeme" id="slide-1492-layer-7" data-x="['left','left','left','left']" data-hoffset="['700','580','420','230']" data-y="['middle','middle','middle','middle']" data-voffset="['-99','-99','-99','-119']" data-fontsize="['35','35','35','25']"
+                                data-lineheight="['40','40','40','30']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;"
+                                data-start="900" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; white-space: nowrap; font-weight: 700;text-transform:left;">Huge<br/> Diversity. </div>
+
+                            <!-- LAYER NR. 5 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1492-layer-8" data-x="['left','left','left','left']" data-hoffset="['700','580','420','230']" data-y="['middle','middle','middle','middle']" data-voffset="['1','1','1','-4']" data-width="['320','320','320','200']"
+                                data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;" data-start="1000"
+                                data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 9; min-width: 320px; max-width: 320px; white-space: normal; font-size: 15px; line-height: 24px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Lato;text-transform:left;">If you purchase a copy of Slider Revolution you will recieve unrestricted access to over<br/><span class="tp-fat">50</span> Ready-to-go Templates! </div>
+
+                            <!-- LAYER NR. 6 -->
+                            <div class="tp-caption SleekLanding-ButtonBG tp-shape tp-shapewrapper  tp-resizeme" id="slide-1492-layer-9" data-x="['left','left','left','left']" data-hoffset="['700','580','420','230']" data-y="['middle','middle','middle','middle']" data-voffset="['105','105','105','105']"
+                                data-width="230" data-height="50" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;"
+                                data-start="1100" data-responsive_offset="on" style="z-index: 10;font-family:Arial;text-transform:left;"> </div>
+
+                            <!-- LAYER NR. 7 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1492-layer-15" data-x="['right','right','right','right']" data-hoffset="['-428','-485','-17','-112']" data-y="['top','bottom','bottom','bottom']" data-voffset="['-11','148','-12','-106']" data-width="none"
+                                data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;rZ:55;" data-transform_in="y:bottom;rZ:-90deg;s:1500;e:Power4.easeOut;" data-transform_out="y:top;rZ:45deg;s:1000;e:Power2.easeIn;s:1000;e:Power2.easeIn;"
+                                data-start="1200" data-responsive_offset="on" style="z-index: 11;text-transform:left;"><img src="assets/include/rs-plugin/demos/assets/images/dummy.png" alt="" width="800" height="800" data-ww="['800px','800px','400px','400px']" data-hh="['800px','800px','400px','400px']" data-lazyload="include/rs-plugin/demos/assets/images/paper.png"
+                                    data-no-retina> </div>
+
+                            <!-- LAYER NR. 8 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1492-layer-14" data-x="['right','right','right','right']" data-hoffset="['962','814','619','341']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['2','-61','72','-40']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;rZ:90deg;s:1500;e:Power4.easeOut;" data-transform_out="y:top;rZ:-40deg;s:1000;e:Power2.easeIn;s:1000;e:Power2.easeIn;" data-start="900" data-responsive_offset="on"
+                                style="z-index: 12;text-transform:left;"><img src="assets/include/rs-plugin/demos/assets/images/dummy.png" alt="" width="750" height="640" data-ww="['750px','750','375px','375px']" data-hh="['640px','640','320px','320px']" data-lazyload="include/rs-plugin/demos/assets/images/plant.png"
+                                    data-no-retina> </div>
+
+                            <!-- LAYER NR. 9 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1492-layer-19" data-x="['right','right','right','right']" data-hoffset="['-133','-142','161','51']" data-y="['top','bottom','bottom','bottom']" data-voffset="['527','134','95','40']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-transform_idle="o:1;rZ:349;" data-transform_in="y:bottom;rZ:90deg;s:1500;e:Power4.easeOut;" data-transform_out="y:top;rZ:390deg;s:1000;e:Power2.easeIn;s:1000;e:Power2.easeIn;" data-start="1250"
+                                data-responsive_offset="on" style="z-index: 13;text-transform:left;"><img src="assets/include/rs-plugin/demos/assets/images/dummy.png" alt="" width="400" height="140" data-ww="['400px','400px','200px','200px']" data-hh="['140px','140px','70px','70px']" data-lazyload="include/rs-plugin/demos/assets/images/glasses.png"
+                                    data-no-retina> </div>
+
+                            <!-- LAYER NR. 10 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1492-layer-16" data-x="['right','right','right','right']" data-hoffset="['-220','-275','-40','-9']" data-y="['top','top','top','top']" data-voffset="['-120','-194','-19','13']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;rZ:45deg;s:1500;e:Power4.easeOut;" data-transform_out="y:top;rZ:-45deg;s:1100;e:Power2.easeIn;s:1100;e:Power2.easeIn;" data-start="1100" data-basealign="slide"
+                                data-responsive_offset="on" style="z-index: 14;text-transform:left;"><img src="assets/include/rs-plugin/demos/assets/images/dummy.png" alt="" width="750" height="640" data-ww="['750px','750px','375px','188px']" data-hh="['640px','640px','320px','160px']" data-lazyload="include/rs-plugin/demos/assets/images/lamp.png"
+                                    data-no-retina> </div>
+
+                            <!-- LAYER NR. 11 -->
+                            <div class="tp-caption SleekLanding-SmallTitle   tp-resizeme" id="slide-1492-layer-10" data-x="['left','left','left','left']" data-hoffset="['721','601','441','251']" data-y="['middle','middle','middle','middle']" data-voffset="['106','106','106','106']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;"
+                                data-start="1150" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 15; white-space: nowrap;text-transform:left;">GET OUR APP </div>
+
+                            <!-- LAYER NR. 12 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1492-layer-11" data-x="['left','left','left','left']" data-hoffset="['853','733','573','383']" data-y="['middle','middle','middle','middle']" data-voffset="['106','106','106','106']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:200;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;"
+                                data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;" data-start="1200" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 16; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400; color: rgba(0, 0, 0, 0.25);text-transform:left;cursor:pointer;"><i class="icon-apple"></i> </div>
+
+                            <!-- LAYER NR. 13 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1492-layer-12" data-x="['left','left','left','left']" data-hoffset="['888','768','608','418']" data-y="['middle','middle','middle','middle']" data-voffset="['105','105','105','105']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:200;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;"
+                                data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;" data-start="1250" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 17; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400; color: rgba(0, 0, 0, 0.25);text-transform:left;cursor:pointer;"><i class="icon-android"></i> </div>
+
+                            <!-- LAYER NR. 14 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-1492-layer-18" data-x="['center','center','center','center']" data-hoffset="['-104','-104','-134','-164']" data-y="['middle','middle','middle','middle']" data-voffset="['-37','-38','-27','-27']"
+                                data-width="['207','209','207','207']" data-height="['367','369','367','367']" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
+                                data-start="500" data-responsive_offset="on" style="z-index: 18;text-transform:left;background-color:rgba(51, 51, 51, 1.00);border-color:rgba(0, 0, 0, 0);">
+                            </div>
+
+                            <!-- LAYER NR. 15 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1492-layer-17" data-x="['center','center','center','center']" data-hoffset="['-104','-104','-134','-164']" data-y="['middle','middle','middle','middle']" data-voffset="['-37','-38','-27','-27']" data-width="none"
+                                data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[-100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="700" data-responsive_offset="on" style="z-index: 19;text-transform:left;"><img src="assets/include/rs-plugin/demos/assets/images/dummy.png" alt="" width="207" height="367" data-ww="['207','207','207','207px']" data-hh="['367','367','367','367px']" data-lazyload="include/rs-plugin/demos/assets/images/iphone_slide2.jpg"
+                                    data-no-retina> </div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-1493" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1000" data-thumb="http://server.local/revslider/wp-content/uploads/"
+                            data-rotate="0" data-saveperformance="off" data-title="Diversity" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/include/rs-plugin/demos/assets/images/dummy.png" style='background-color:#dddddd' alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1493-layer-1" data-x="['left','left','left','left']" data-hoffset="['45','45','45','20']" data-y="['top','top','top','top']" data-voffset="['30','30','30','30']" data-fontsize="['150','150','100','70']"
+                                data-lineheight="['150','150','100','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;s:1500;e:Power4.easeOut;" data-transform_out="y:top;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;"
+                                data-start="600" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 5; white-space: nowrap; font-size: 150px; line-height: 150px; font-weight: 900; color: rgba(0, 0, 0, 0.05);font-family:Lato;text-transform:left;">SUPREME </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1493-layer-2" data-x="['left','left','left','left']" data-hoffset="['45','45','45','20']" data-y="['top','top','top','top']" data-voffset="['169','169','132','101']" data-fontsize="['150','150','100','70']"
+                                data-lineheight="['150','150','100','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;s:1500;e:Power4.easeOut;" data-transform_out="y:top;s:650;e:Power2.easeIn;s:650;e:Power2.easeIn;"
+                                data-start="700" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 6; white-space: nowrap; font-size: 150px; line-height: 150px; font-weight: 900; color: rgba(0, 0, 0, 0.05);font-family:Lato;text-transform:left;">GOODIES </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1493-layer-3" data-x="['left','left','left','left']" data-hoffset="['45','45','45','20']" data-y="['top','top','top','top']" data-voffset="['308','308','235','172']" data-fontsize="['150','150','100','70']"
+                                data-lineheight="['150','150','100','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;s:1500;e:Power4.easeOut;" data-transform_out="y:top;s:800;e:Power2.easeIn;s:800;e:Power2.easeIn;"
+                                data-start="800" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; font-size: 150px; line-height: 150px; font-weight: 900; color: rgba(0, 0, 0, 0.05);font-family:Lato;text-transform:left;">FREE </div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption SleekLanding-Title   tp-resizeme" id="slide-1493-layer-7" data-x="['left','left','left','left']" data-hoffset="['700','580','420','230']" data-y="['middle','middle','middle','middle']" data-voffset="['-99','-99','-99','-119']" data-fontsize="['35','35','35','25']"
+                                data-lineheight="['40','40','40','30']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;"
+                                data-start="900" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; white-space: nowrap; font-weight: 700; color: rgba(34, 34, 34, 1.00);text-transform:left;">Premium<br/> Add-Ons. </div>
+
+                            <!-- LAYER NR. 5 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1493-layer-8" data-x="['left','left','left','left']" data-hoffset="['700','580','420','230']" data-y="['middle','middle','middle','middle']" data-voffset="['1','1','1','-4']" data-width="['320','320','320','200']"
+                                data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;" data-start="1000"
+                                data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 9; min-width: 320px; max-width: 320px; white-space: normal; font-size: 15px; line-height: 24px; font-weight: 400; color: rgba(68, 68, 68, 1.00);font-family:Lato;text-transform:left;">Slider Revolution sports super awesome add-ons that enable truly next level features.<br/> Take your website to the next level! </div>
+
+                            <!-- LAYER NR. 6 -->
+                            <div class="tp-caption SleekLanding-ButtonBG tp-shape tp-shapewrapper  tp-resizeme" id="slide-1493-layer-9" data-x="['left','left','left','left']" data-hoffset="['700','580','420','230']" data-y="['middle','middle','middle','middle']" data-voffset="['105','105','105','105']"
+                                data-width="230" data-height="50" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;"
+                                data-start="1100" data-responsive_offset="on" style="z-index: 10;font-family:Arial;text-transform:left;background-color:rgba(255, 255, 255, 0.20);"> </div>
+
+                            <!-- LAYER NR. 7 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1493-layer-15" data-x="['right','right','right','right']" data-hoffset="['-23','-10','40','12']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-74','-127','60','9']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;rZ:-90deg;s:1500;e:Power4.easeOut;" data-transform_out="y:top;rZ:45deg;s:1000;e:Power2.easeIn;s:1000;e:Power2.easeIn;" data-start="1200" data-responsive_offset="on"
+                                style="z-index: 11;text-transform:left;"><img src="assets/include/rs-plugin/demos/assets/images/dummy.png" alt="" width="520" height="380" data-ww="['520px','520','260','260px']" data-hh="['380px','380','190px','190px']" data-lazyload="include/rs-plugin/demos/assets/images/ball.png"
+                                    data-no-retina> </div>
+
+                            <!-- LAYER NR. 8 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1493-layer-14" data-x="['right','right','right','right']" data-hoffset="['44','10','30','10']" data-y="['top','top','top','top']" data-voffset="['31','10','25','10']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;rZ:90deg;s:1500;e:Power4.easeOut;" data-transform_out="y:top;rZ:-40deg;s:1000;e:Power2.easeIn;s:1000;e:Power2.easeIn;" data-start="900" data-responsive_offset="on"
+                                style="z-index: 12;text-transform:left;"><img src="assets/include/rs-plugin/demos/assets/images/dummy.png" alt="" width="230" height="290" data-ww="['230px','230','165px','165']" data-hh="['290px','290','208px','208']" data-lazyload="include/rs-plugin/demos/assets/images/usb.png"
+                                    data-no-retina> </div>
+
+                            <!-- LAYER NR. 9 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1493-layer-16" data-x="['left','left','left','left']" data-hoffset="['-299','-413','-53','-172']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-307','-323','-96','-176']" data-width="none"
+                                data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:bottom;rZ:45deg;s:1500;e:Power4.easeOut;" data-transform_out="y:top;rZ:-45deg;s:1100;e:Power2.easeIn;s:1100;e:Power2.easeIn;" data-start="1100"
+                                data-responsive_offset="on" style="z-index: 13;text-transform:left;"><img src="assets/include/rs-plugin/demos/assets/images/dummy.png" alt="" width="800" height="910" data-ww="['800px','800','400px','400px']" data-hh="['910px','910','455px','455']" data-lazyload="include/rs-plugin/demos/assets/images/headphones.png"
+                                    data-no-retina> </div>
+
+                            <!-- LAYER NR. 10 -->
+                            <div class="tp-caption SleekLanding-SmallTitle   tp-resizeme" id="slide-1493-layer-10" data-x="['left','left','left','left']" data-hoffset="['721','601','441','251']" data-y="['middle','middle','middle','middle']" data-voffset="['106','106','106','106']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;"
+                                data-start="1150" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 14; white-space: nowrap; color: rgba(34, 34, 34, 1.00);text-transform:left;">GET OUR APP </div>
+
+                            <!-- LAYER NR. 11 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1493-layer-11" data-x="['left','left','left','left']" data-hoffset="['853','733','573','383']" data-y="['middle','middle','middle','middle']" data-voffset="['106','106','106','106']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:200;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;"
+                                data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;" data-start="1200" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 15; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400; color: rgba(0, 0, 0, 0.25);text-transform:left;cursor:pointer;"><i class="icon-apple"></i> </div>
+
+                            <!-- LAYER NR. 12 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1493-layer-12" data-x="['left','left','left','left']" data-hoffset="['888','768','608','418']" data-y="['middle','middle','middle','middle']" data-voffset="['105','105','105','105']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:200;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeOut;"
+                                data-transform_out="y:-50px;opacity:0;s:500;e:Power2.easeIn;s:500;e:Power2.easeIn;" data-start="1250" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 16; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400; color: rgba(0, 0, 0, 0.25);text-transform:left;cursor:pointer;"><i class="icon-android"></i> </div>
+
+                            <!-- LAYER NR. 13 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-1493-layer-18" data-x="['center','center','center','center']" data-hoffset="['-104','-104','-134','-164']" data-y="['middle','middle','middle','middle']" data-voffset="['-37','-37','-27','-27']"
+                                data-width="['209','209','207','207']" data-height="['369','369','367','367']" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
+                                data-start="500" data-responsive_offset="on" style="z-index: 17;text-transform:left;background-color:rgba(51, 51, 51, 1.00);border-color:rgba(0, 0, 0, 0);">
+                            </div>
+
+                            <!-- LAYER NR. 14 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-1493-layer-17" data-x="['center','center','center','center']" data-hoffset="['-104','-104','-134','-164']" data-y="['middle','middle','middle','middle']" data-voffset="['-37','-38','-27','-27']" data-width="none"
+                                data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[-100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="700" data-responsive_offset="on" style="z-index: 18;text-transform:left;"><img src="assets/include/rs-plugin/demos/assets/images/dummy.png" alt="" width="207" height="367" data-ww="['207','207px','207','207px']" data-hh="['367','367px','367','367px']" data-lazyload="include/rs-plugin/demos/assets/images/iphone_slide3.jpg"
+                                    data-no-retina> </div>
+                        </li>
+                    </ul>
+                    <div style="" class="tp-static-layers">
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption SleekLanding-BottomText   tp-resizeme tp-static-layer" id="slider-429-layer-2" data-x="['left','left','center','center']" data-hoffset="['20','20','0','-457']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['30','30','170','90']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;"
+                            data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-startslide="0" data-endslide="2" style="z-index: 6; white-space: nowrap;text-transform:left;">A Slider Revolution <span class="tp-fat">FREE</span> Premium Template </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption social-text  tp-resizeme tp-static-layer" id="slider-429-layer-3" data-x="['right','right','center','center']" data-hoffset="['150','150','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['30','30','130','130']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none"
+                            data-responsive_offset="on" data-startslide="0" data-endslide="2" style="z-index: 7; white-space: nowrap; font-size: 15px; line-height: 24px; font-weight: 400;font-family:Lato;text-transform:left;">Get in touch via Social Media </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <a class="tp-caption SleekLanding-Social   tp-resizeme tp-static-layer" href="#" target="_blank" id="slider-429-layer-4" data-x="['right','right','center','center']" data-hoffset="['105','105','-40','-40']" data-y="['bottom','bottom','bottom','bottom']"
+                            data-voffset="['27','27','90','90']" data-width="30" data-height="30" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:200;e:Power1.easeInOut;" data-style_hover="c:rgba(0, 0, 0, 0.25);"
+                            data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-actions='' data-responsive_offset="on" data-startslide="0" data-endslide="2"
+                            style="z-index: 8; min-width: 30px; max-width: 30px; max-width: 30px; max-width: 30px; white-space: nowrap;text-transform:left;cursor:pointer;"><i class="icon-facebook"></i> </a>
+
+                        <!-- LAYER NR. 5 -->
+                        <a class="tp-caption SleekLanding-Social   tp-resizeme tp-static-layer" href="https://twitter.com/__semicolon" target="_blank" id="slider-429-layer-5" data-x="['right','right','center','center']" data-hoffset="['65','65','0','0']" data-y="['bottom','bottom','bottom','bottom']"
+                            data-voffset="['27','27','90','90']" data-width="30" data-height="30" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:200;e:Power1.easeInOut;" data-style_hover="c:rgba(0, 0, 0, 0.25);"
+                            data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-actions='' data-responsive_offset="on" data-startslide="0" data-endslide="2"
+                            style="z-index: 9; min-width: 30px; max-width: 30px; max-width: 30px; max-width: 30px; white-space: nowrap;text-transform:left;cursor:pointer;"><i class="icon-twitter"></i> </a>
+
+                        <!-- LAYER NR. 6 -->
+                        <a class="tp-caption SleekLanding-Social   tp-resizeme tp-static-layer" href="#" target="_blank" id="slider-429-layer-6" data-x="['right','right','center','center']" data-hoffset="['20','20','40','40']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['27','27','90','90']"
+                            data-width="30" data-height="30" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:200;e:Power1.easeInOut;" data-style_hover="c:rgba(0, 0, 0, 0.25);" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;"
+                            data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-actions='' data-responsive_offset="on" data-startslide="0" data-endslide="2" style="z-index: 10; min-width: 30px; max-width: 30px; max-width: 30px; max-width: 30px; white-space: nowrap;text-transform:left;cursor:pointer;"><i class="icon-google-plus"></i> </a>
+
+                        <!-- LAYER NR. 7 -->
+                        <div class="tp-caption  SleekLanding-Social tp-resizeme tp-static-layer" id="slider-429-layer-7" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['30','30','30','30']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none"
+                            data-actions='[{"event":"click","action":"scrollbelow","offset":"-60px","delay":""}]' data-responsive_offset="on" data-startslide="0" data-endslide="2" style="z-index: 11; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400;text-transform:left;cursor:pointer;">
+                            <div class="rs-looped rs-slideloop" data-easing="Power2.easeInOut" data-speed="1" data-xs="0" data-xe="0" data-ys="-5" data-ye="5"><i class="icon-chevron-down"></i> </div>
+                        </div>
+
+                        <!-- LAYER NR. 8 -->
+                        <div class="tp-caption   tp-resizeme tp-static-layer" id="slider-429-layer-8" data-x="['center','center','center','center']" data-hoffset="['-151','-151','-181','-211']" data-y="['middle','middle','middle','middle']" data-voffset="['6','6','17','17']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-responsive_offset="on"
+                            data-startslide="0" data-endslide="2" style="z-index: 12;text-transform:left;"><img src="assets/include/rs-plugin/demos/assets/images/dummy.png" alt="" width="350" height="650" data-ww="['350px','350px','350','350px']" data-hh="['650px','650px','650','650px']" data-lazyload="include/rs-plugin/demos/assets/images/iphone_cutout.png"
+                                data-no-retina> </div>
+                    </div>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                </div>
+            </div>
+            <!-- END REVOLUTION SLIDER -->
+
+        </section>
+        <!-- #content end -->
+
+        <!-- Content
+		============================================= -->
+        <section id="content">
+            <div class="content-wrap">
+                <div class="container clearfix">
+                    <div class="row clearfix">
+                        <div class="col-lg-5">
+                            <div class="heading-block topmargin">
+                                <h1>Welcome to Node JS.<br>MultiPurpose Template.</h1>
+                            </div>
+                            <p class="lead">Create a website that you are gonna be proud of. Be it Business, Portfolio, Agency, Photography, eCommerce &amp; much more.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-7">
+
+                            <div style="position: relative; margin-bottom: -60px;" class="ohidden" data-height-lg="426" data-height-md="567" data-height-sm="470" data-height-xs="287" data-height-xxs="183">
+                                <img src="images/services/main-fbrowser.png" style="position: absolute; top: 0; left: 0;" data-animate="fadeInUp" data-delay="100" alt="Chrome">
+                                <img src="images/services/main-fmobile.png" style="position: absolute; top: 0; left: 0;" data-animate="fadeInUp" data-delay="400" alt="iPad">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="section nobottommargin">
+                    <div class="container clear-bottommargin clearfix">
+
+                        <div class="row topmargin-sm clearfix">
+
+                            <div class="col-md-4 bottommargin">
+                                <i class="i-plain color i-large icon-line2-screen-desktop inline-block" style="margin-bottom: 15px;"></i>
+                                <div class="heading-block nobottomborder" style="margin-bottom: 15px;">
+                                    <span class="before-heading">Scalable on Devices.</span>
+                                    <h4>Responsive &amp; Retina</h4>
+                                </div>
+                                <p>Employment respond committed meaningful fight against oppression social challenges rural legal aid governance. Meaningful work, implementation, process cooperation, campaign inspire.</p>
+                            </div>
+
+                            <div class="col-md-4 bottommargin">
+                                <i class="i-plain color i-large icon-line2-energy inline-block" style="margin-bottom: 15px;"></i>
+                                <div class="heading-block nobottomborder" style="margin-bottom: 15px;">
+                                    <span class="before-heading">Smartly Coded &amp; Maintained.</span>
+                                    <h4>Powerful Performance</h4>
+                                </div>
+                                <p>Medecins du Monde Jane Addams reduce child mortality challenges Ford Foundation. Diversification shifting landscape advocate pathway to a better life rights international. Assessment.</p>
+                            </div>
+
+                            <div class="col-md-4 bottommargin">
+                                <i class="i-plain color i-large icon-line2-equalizer inline-block" style="margin-bottom: 15px;"></i>
+                                <div class="heading-block nobottomborder" style="margin-bottom: 15px;">
+                                    <span class="before-heading">Flexible &amp; Customizable.</span>
+                                    <h4>Truly Multi-Purpose</h4>
+                                </div>
+                                <p>Democracy inspire breakthroughs, Rosa Parks; inspiration raise awareness natural resources. Governance impact; transformative donation philanthropy, respect reproductive.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container clearfix">
+                    <div class="row topmargin-lg bottommargin-sm">
+                        <div class="heading-block center">
+                            <h2>Even more Feature Rich</h2>
+                            <span class="divcenter">Philanthropy convener livelihoods, initiative end hunger gender rights local. John Lennon storytelling; advocate, altruism impact catalyst.</span>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 bottommargin">
+
+                            <div class="feature-box fbox-right topmargin" data-animate="fadeIn">
+                                <div class="fbox-icon">
+                                    <a href="#"><i class="icon-line-heart"></i></a>
+                                </div>
+                                <h3>Boxed &amp; Wide Layouts</h3>
+                                <p>Stretch your Website to the Full Width or make it boxed to surprise your visitors.</p>
+                            </div>
+
+                            <div class="feature-box fbox-right topmargin" data-animate="fadeIn" data-delay="200">
+                                <div class="fbox-icon">
+                                    <a href="#"><i class="icon-line-paper"></i></a>
+                                </div>
+                                <h3>Extensive Documentation</h3>
+                                <p>We have covered each &amp; everything in our Docs including Videos &amp; Screenshots.</p>
+                            </div>
+
+                            <div class="feature-box fbox-right topmargin" data-animate="fadeIn" data-delay="400">
+                                <div class="fbox-icon">
+                                    <a href="#"><i class="icon-line-layers"></i></a>
+                                </div>
+                                <h3>Parallax Support</h3>
+                                <p>Display your Content attractively using Parallax Sections with HTML5 Videos.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 hidden-sm bottommargin center">
+                            <img src="images/services/iphone7.png" alt="iphone 2">
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 bottommargin">
+
+                            <div class="feature-box topmargin" data-animate="fadeIn">
+                                <div class="fbox-icon">
+                                    <a href="#"><i class="icon-line-power"></i></a>
+                                </div>
+                                <h3>HTML5 Video</h3>
+                                <p>Themeforest provides support for Native HTML5 Videos that can be added to a Background.</p>
+                            </div>
+
+                            <div class="feature-box topmargin" data-animate="fadeIn" data-delay="200">
+                                <div class="fbox-icon">
+                                    <a href="#"><i class="icon-line-check"></i></a>
+                                </div>
+                                <h3>Endless Possibilities</h3>
+                                <p>Complete control on each &amp; every element that provides endless customization.</p>
+                            </div>
+
+                            <div class="feature-box topmargin" data-animate="fadeIn" data-delay="400">
+                                <div class="fbox-icon">
+                                    <a href="#"><i class="icon-bulb"></i></a>
+                                </div>
+                                <h3>Light &amp; Dark Color Schemes</h3>
+                                <p>Change your Website's Primary Scheme instantly by simply adding the dark class.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row clearfix common-height">
+                    <div class="col-md-6 center col-padding" style="background: url('images/services/main-bg.jpg') center center no-repeat; background-size: cover;">
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="col-md-6 center col-padding" style="background-color: #F5F5F5;">
+                        <div>
+                            <div class="heading-block nobottomborder">
+                                <span class="before-heading color">Easily Understandable &amp; Customizable.</span>
+                                <h3>Walkthrough Videos &amp; Demos</h3>
+                            </div>
+                            <div class="center bottommargin">
+                                <a href="http://vimeo.com/101373765" data-lightbox="iframe" style="position: relative;">
+                                    <img src="images/services/video.jpg" alt="Video">
+                                    <span class="i-overlay nobg"><img src="images/icons/video-play.png" alt="Play"></span>
+                                </a>
+                            </div>
+                            <p class="lead nobottommargin">Democracy inspire breakthroughs, Rosa Parks; inspiration raise awareness natural resources. Governance impact; transformative donation philanthropy, respect reproductive.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row clearfix bottommargin-lg common-height">
+
+                    <div class="col-md-3 col-sm-6 dark center col-padding" style="background-color: #515875;">
+                        <div>
+                            <i class="i-plain i-xlarge divcenter icon-line2-directions"></i>
+                            <div class="counter counter-lined"><span data-from="100" data-to="846" data-refresh-interval="50" data-speed="2000"></span>K</div>
+                            <h5>Lines of Codes</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 dark center col-padding" style="background-color: #576F9E;">
+                        <div>
+                            <i class="i-plain i-xlarge divcenter icon-line2-graph"></i>
+                            <div class="counter counter-lined"><span data-from="3000" data-to="21500" data-refresh-interval="100" data-speed="2500"></span></div>
+                            <h5>KBs of HTML Files</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 dark center col-padding" style="background-color: #6697B9;">
+                        <div>
+                            <i class="i-plain i-xlarge divcenter icon-line2-layers"></i>
+                            <div class="counter counter-lined"><span data-from="10" data-to="408" data-refresh-interval="25" data-speed="3500"></span></div>
+                            <h5>No. of Templates</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 dark center col-padding" style="background-color: #88C3D8;">
+                        <div>
+                            <i class="i-plain i-xlarge divcenter icon-line2-clock"></i>
+                            <div class="counter counter-lined"><span data-from="60" data-to="1400" data-refresh-interval="30" data-speed="2700"></span></div>
+                            <h5>Hours of Coding</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container clearfix">
+                    <div class="col_one_third">
+                        <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-line-monitor"></i></a>
+                            </div>
+                            <h3>Responsive Layout</h3>
+                            <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
+                        </div>
+                    </div>
+
+                    <div class="col_one_third">
+                        <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="200">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-line-eye"></i></a>
+                            </div>
+                            <h3>Retina Ready Graphics</h3>
+                            <p>Looks beautiful &amp; ultra-sharp on Retina Displays with Retina Icons, Fonts &amp; Images.</p>
+                        </div>
+                    </div>
+
+                    <div class="col_one_third col_last">
+                        <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="400">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-line-star"></i></a>
+                            </div>
+                            <h3>Powerful Performance</h3>
+                            <p>Optimized code that are completely customizable and deliver unmatched fast performance.</p>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="col_one_third">
+                        <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="600">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-line-play"></i></a>
+                            </div>
+                            <h3>HTML5 Video</h3>
+                            <p>Themeforest provides support for Native HTML5 Videos that can be added to a Full Width Background.</p>
+                        </div>
+                    </div>
+
+                    <div class="col_one_third">
+                        <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="800">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-params"></i></a>
+                            </div>
+                            <h3>Parallax Support</h3>
+                            <p>Display your Content attractively using Parallax Sections that have unlimited customizable areas.</p>
+                        </div>
+                    </div>
+
+                    <div class="col_one_third col_last">
+                        <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="1000">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-line-circle-check"></i></a>
+                            </div>
+                            <h3>Endless Possibilities</h3>
+                            <p>Complete control on each &amp; every element that provides endless customization possibilities.</p>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="col_one_third bottommargin-sm">
+                        <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="600">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-bulb"></i></a>
+                            </div>
+                            <h3>Light &amp; Dark Color Schemes</h3>
+                            <p>Change your Website's Primary Scheme instantly by simply adding the dark class to the body.</p>
+                        </div>
+                    </div>
+
+                    <div class="col_one_third bottommargin-sm">
+                        <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="800">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-heart2"></i></a>
+                            </div>
+                            <h3>Boxed &amp; Wide Layouts</h3>
+                            <p>Stretch your Website to the Full Width or make it boxed to surprise your visitors.</p>
+                        </div>
+                    </div>
+
+                    <div class="col_one_third bottommargin-sm col_last">
+                        <div class="feature-box fbox-small fbox-plain" data-animate="fadeIn" data-delay="1000">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-note"></i></a>
+                            </div>
+                            <h3>Extensive Documentation</h3>
+                            <p>We have covered each &amp; everything in our Documentation including Videos &amp; Screenshots.</p>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                </div>
+
+                <div class="section topmargin nobottommargin nobottomborder">
+                    <div class="container clearfix">
+                        <div class="heading-block center nomargin">
+                            <h3>Our Latest Works</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="portfolio" class="portfolio portfolio-nomargin grid-container portfolio-notitle portfolio-full grid-container clearfix">
+
+                    <article class="portfolio-item pf-media pf-icons">
+                        <div class="portfolio-image">
+                            <a href="portfolio-single.html">
+                                <img src="images/portfolio/4/1.jpg" alt="Open Imagination">
+                            </a>
+                            <div class="portfolio-overlay">
+                                <a href="images/portfolio/full/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                                <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h3><a href="portfolio-single.html">Open Imagination</a></h3>
+                            <span><a href="#">Media</a>, <a href="#">Icons</a></span>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item pf-illustrations">
+                        <div class="portfolio-image">
+                            <a href="portfolio-single.html">
+                                <img src="images/portfolio/4/2.jpg" alt="Locked Steel Gate">
+                            </a>
+                            <div class="portfolio-overlay">
+                                <a href="images/portfolio/full/2.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                                <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h3><a href="portfolio-single.html">Locked Steel Gate</a></h3>
+                            <span><a href="#">Illustrations</a></span>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item pf-graphics pf-uielements">
+                        <div class="portfolio-image">
+                            <a href="#">
+                                <img src="images/portfolio/4/3.jpg" alt="Mac Sunglasses">
+                            </a>
+                            <div class="portfolio-overlay">
+                                <a href="http://vimeo.com/89396394" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                                <a href="portfolio-single-video.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h3><a href="portfolio-single-video.html">Mac Sunglasses</a></h3>
+                            <span><a href="#">Graphics</a>, <a href="#">UI Elements</a></span>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item pf-icons pf-illustrations">
+                        <div class="portfolio-image">
+                            <a href="portfolio-single.html">
+                                <img src="images/portfolio/4/4.jpg" alt="Open Imagination">
+                            </a>
+                            <div class="portfolio-overlay" data-lightbox="gallery">
+                                <a href="images/portfolio/full/4.jpg" class="left-icon" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                                <a href="images/portfolio/full/4-1.jpg" class="hidden" data-lightbox="gallery-item"></a>
+                                <a href="portfolio-single-gallery.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h3><a href="portfolio-single-gallery.html">Morning Dew</a></h3>
+                            <span><a href="#">Icons</a>, <a href="#">Illustrations</a></span>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item pf-uielements pf-media">
+                        <div class="portfolio-image">
+                            <a href="portfolio-single.html">
+                                <img src="images/portfolio/4/5.jpg" alt="Console Activity">
+                            </a>
+                            <div class="portfolio-overlay">
+                                <a href="images/portfolio/full/5.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                                <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h3><a href="portfolio-single.html">Console Activity</a></h3>
+                            <span><a href="#">UI Elements</a>, <a href="#">Media</a></span>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item pf-graphics pf-illustrations">
+                        <div class="portfolio-image">
+                            <a href="portfolio-single.html">
+                                <img src="images/portfolio/4/6.jpg" alt="Open Imagination">
+                            </a>
+                            <div class="portfolio-overlay" data-lightbox="gallery">
+                                <a href="images/portfolio/full/6.jpg" class="left-icon" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                                <a href="images/portfolio/full/6-1.jpg" class="hidden" data-lightbox="gallery-item"></a>
+                                <a href="images/portfolio/full/6-2.jpg" class="hidden" data-lightbox="gallery-item"></a>
+                                <a href="images/portfolio/full/6-3.jpg" class="hidden" data-lightbox="gallery-item"></a>
+                                <a href="portfolio-single-gallery.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h3><a href="portfolio-single-gallery.html">Shake It!</a></h3>
+                            <span><a href="#">Illustrations</a>, <a href="#">Graphics</a></span>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item pf-uielements pf-icons">
+                        <div class="portfolio-image">
+                            <a href="portfolio-single-video.html">
+                                <img src="images/portfolio/4/7.jpg" alt="Backpack Contents">
+                            </a>
+                            <div class="portfolio-overlay">
+                                <a href="http://www.youtube.com/watch?v=kuceVNBTJio" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                                <a href="portfolio-single-video.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h3><a href="portfolio-single-video.html">Backpack Contents</a></h3>
+                            <span><a href="#">UI Elements</a>, <a href="#">Icons</a></span>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item pf-graphics">
+                        <div class="portfolio-image">
+                            <a href="portfolio-single.html">
+                                <img src="images/portfolio/4/8.jpg" alt="Sunset Bulb Glow">
+                            </a>
+                            <div class="portfolio-overlay">
+                                <a href="images/portfolio/full/8.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                                <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h3><a href="portfolio-single.html">Sunset Bulb Glow</a></h3>
+                            <span><a href="#">Graphics</a></span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="clear"></div>
+                <a href="portfolio.html" class="button button-full button-dark center tright bottommargin-lg">
+                    <div class="container clearfix">
+                        More than 100+ predefined Portfolio Grid Layouts. <strong>See More</strong> <i class="icon-caret-right" style="top:4px;"></i>
+                    </div>
+                </a>
+
+                <div class="container clearfix">
+
+                    <div class="col_one_third bottommargin-sm center">
+                        <img data-animate="fadeInLeft" src="images/services/iphone6.png" alt="Iphone">
+                    </div>
+
+                    <div class="col_two_third bottommargin-sm col_last">
+
+                        <div class="heading-block topmargin-sm">
+                            <h3>Optimized for Mobile &amp; Touch Enabled Devices.</h3>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam,
+                            laboriosam!</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vero, animi suscipit id facere officia. Aspernatur, quo, quos nisi dolorum aperiam fugiat deserunt velit rerum laudantium cum magnam.</p>
+
+                        <a href="#" class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Learn more</a>
+
+                    </div>
+
+                </div>
+
+                <div class="section parallax dark nobottommargin" style="background-image: url('images/services/home-testi-bg.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.4">
+
+                    <div class="heading-block center">
+                        <h3>What Clients Say?</h3>
+                    </div>
+
+                    <div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+                        <div class="flexslider">
+                            <div class="slider-wrap">
+                                <div class="slide">
+                                    <div class="testi-image">
+                                        <a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?</p>
+                                        <div class="testi-meta">
+                                            Steve Jobs
+                                            <span>Apple Inc.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="testi-image">
+                                        <a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
+                                        <div class="testi-meta">
+                                            Collis Ta'eed
+                                            <span>Envato Inc.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="testi-image">
+                                        <a href="#"><img src="images/testimonials/1.jpg" alt="Customer Testimonails"></a>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
+                                        <div class="testi-meta">
+                                            John Doe
+                                            <span>XYZ Inc.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="section notopmargin notopborder">
+                    <div class="container clearfix">
+                        <div class="heading-block center nomargin">
+                            <h3>Latest from the Blog</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container clear-bottommargin clearfix">
+                    <div class="row">
+
+                        <div class="col-md-3 col-sm-6 bottommargin">
+                            <div class="ipost clearfix">
+                                <div class="entry-image">
+                                    <a href="#"><img class="image_fade" src="images/magazine/thumb/1.jpg" alt="Image"></a>
+                                </div>
+                                <div class="entry-title">
+                                    <h3><a href="blog-single.html">Bloomberg smart cities; change-makers economic security</a></h3>
+                                </div>
+                                <ul class="entry-meta clearfix">
+                                    <li><i class="icon-calendar3"></i> 13th Jun 2014</li>
+                                    <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 53</a></li>
+                                </ul>
+                                <div class="entry-content">
+                                    <p>Prevention effect, advocate dialogue rural development lifting people up community civil society. Catalyst, grantees leverage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 bottommargin">
+                            <div class="ipost clearfix">
+                                <div class="entry-image">
+                                    <a href="#"><img class="image_fade" src="images/magazine/thumb/2.jpg" alt="Image"></a>
+                                </div>
+                                <div class="entry-title">
+                                    <h3><a href="blog-single.html">Medicine new approaches communities, outcomes partnership</a></h3>
+                                </div>
+                                <ul class="entry-meta clearfix">
+                                    <li><i class="icon-calendar3"></i> 24th Feb 2014</li>
+                                    <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 17</a></li>
+                                </ul>
+                                <div class="entry-content">
+                                    <p>Cross-agency coordination clean water rural, promising development turmoil inclusive education transformative community.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 bottommargin">
+                            <div class="ipost clearfix">
+                                <div class="entry-image">
+                                    <a href="#"><img class="image_fade" src="images/magazine/thumb/3.jpg" alt="Image"></a>
+                                </div>
+                                <div class="entry-title">
+                                    <h3><a href="blog-single.html">Significant altruism planned giving insurmountable challenges liberal</a></h3>
+                                </div>
+                                <ul class="entry-meta clearfix">
+                                    <li><i class="icon-calendar3"></i> 30th Dec 2014</li>
+                                    <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
+                                </ul>
+                                <div class="entry-content">
+                                    <p>Micro-finance; vaccines peaceful contribution citizens of change generosity. Measures design thinking accelerate progress medical initiative.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 bottommargin">
+                            <div class="ipost clearfix">
+                                <div class="entry-image">
+                                    <a href="#"><img class="image_fade" src="images/magazine/thumb/4.jpg" alt="Image"></a>
+                                </div>
+                                <div class="entry-title">
+                                    <h3><a href="blog-single.html">Compassion conflict resolution, progressive; tackle</a></h3>
+                                </div>
+                                <ul class="entry-meta clearfix">
+                                    <li><i class="icon-calendar3"></i> 15th Jan 2014</li>
+                                    <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 54</a></li>
+                                </ul>
+                                <div class="entry-content">
+                                    <p>Community health workers best practices, effectiveness meaningful work The Elders fairness. Our ambitions local solutions globalization.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="container clearfix">
+
+                        <div class="row topmargin-sm">
+
+                            <div class="heading-block center">
+                                <h3>Meet Our Team</h3>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 bottommargin">
+
+                                <div class="team">
+                                    <div class="team-image">
+                                        <img src="images/team/3.jpg" alt="John Doe">
+                                    </div>
+                                    <div class="team-desc team-desc-bg">
+                                        <div class="team-title">
+                                            <h4>John Doe</h4><span>CEO</span></div>
+                                        <a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+                                            <i class="icon-facebook"></i>
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                        <a href="#" class="social-icon inline-block si-small si-light si-rounded si-twitter">
+                                            <i class="icon-twitter"></i>
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                        <a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
+                                            <i class="icon-gplus"></i>
+                                            <i class="icon-gplus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 bottommargin">
+
+                                <div class="team">
+                                    <div class="team-image">
+                                        <img src="images/team/2.jpg" alt="Josh Clark">
+                                    </div>
+                                    <div class="team-desc team-desc-bg">
+                                        <div class="team-title">
+                                            <h4>Josh Clark</h4><span>Co-Founder</span></div>
+                                        <a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+                                            <i class="icon-facebook"></i>
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                        <a href="#" class="social-icon inline-block si-small si-light si-rounded si-twitter">
+                                            <i class="icon-twitter"></i>
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                        <a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
+                                            <i class="icon-gplus"></i>
+                                            <i class="icon-gplus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 bottommargin">
+
+                                <div class="team">
+                                    <div class="team-image">
+                                        <img src="images/team/8.jpg" alt="Mary Jane">
+                                    </div>
+                                    <div class="team-desc team-desc-bg">
+                                        <div class="team-title">
+                                            <h4>Mary Jane</h4><span>Sales</span></div>
+                                        <a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+                                            <i class="icon-facebook"></i>
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                        <a href="#" class="social-icon inline-block si-small si-light si-rounded si-twitter">
+                                            <i class="icon-twitter"></i>
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                        <a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
+                                            <i class="icon-gplus"></i>
+                                            <i class="icon-gplus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 bottommargin">
+
+                                <div class="team">
+                                    <div class="team-image">
+                                        <img src="images/team/4.jpg" alt="Nix Maxwell">
+                                    </div>
+                                    <div class="team-desc team-desc-bg">
+                                        <div class="team-title">
+                                            <h4>Nix Maxwell</h4><span>Support</span></div>
+                                        <a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+                                            <i class="icon-facebook"></i>
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                        <a href="#" class="social-icon inline-block si-small si-light si-rounded si-twitter">
+                                            <i class="icon-twitter"></i>
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                        <a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
+                                            <i class="icon-gplus"></i>
+                                            <i class="icon-gplus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="clear"></div>
+
+                            <div class="fancy-title title-border title-center topmargin-sm">
+                                <h4>Skills we are Perfect in</h4>
+                            </div>
+
+                            <div class="col_one_fourth nobottommargin center">
+                                <div class="rounded-skill" data-color="#D01C1C" data-size="150" data-percent="90" data-width="2" data-animate="3000">
+                                    <div class="counter counter-inherit"><span data-from="1" data-to="90" data-refresh-interval="50" data-speed="3000"></span>%</div>
+                                </div>
+                                <h5>HTML5</h5>
+                            </div>
+
+                            <div class="col_one_fourth nobottommargin center">
+                                <div class="rounded-skill" data-color="#1770A4" data-size="150" data-percent="75" data-width="2" data-animate="3000">
+                                    <div class="counter counter-inherit"><span data-from="1" data-to="75" data-refresh-interval="50" data-speed="3000"></span>%</div>
+                                </div>
+                                <h5>CSS3</h5>
+                            </div>
+
+                            <div class="col_one_fourth nobottommargin center">
+                                <div class="rounded-skill" data-color="#6A89AA" data-size="150" data-percent="85" data-width="2" data-animate="3000">
+                                    <div class="counter counter-inherit"><span data-from="1" data-to="85" data-refresh-interval="50" data-speed="3000"></span>%</div>
+                                </div>
+                                <h5>PHP</h5>
+                            </div>
+
+                            <div class="col_one_fourth nobottommargin center col_last">
+                                <div class="rounded-skill" data-color="#248673" data-size="150" data-percent="80" data-width="2" data-animate="3000">
+                                    <div class="counter counter-inherit"><span data-from="1" data-to="80" data-refresh-interval="50" data-speed="3000"></span>%</div>
+                                </div>
+                                <h5>jQuery</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- #content end -->
+
+        <!-- Footer
+      		============================================= -->
+        <footer id="footer" class="dark">
+            <div class="container">
+                <!-- Footer Widgets
+      				============================================= -->
+                <div class="footer-widgets-wrap clearfix">
+                    <div class="col_one_third">
+                        <div class="widget clearfix">
+                            <img src="/assets/images/footer-logo@2x.png" alt="" class="footer-logo">
+                            <p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards with a Retina &amp; Responsive Approach. Browse the amazing Features this template offers.</p>
+                            <div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+                                <address>
+      									<strong>Headquarters:</strong>
+      									<!-- <br> 795 Folsom Ave, Suite 600 -->
+      									<br> Tp HCM<br>
+      								</address>
+                                <abbr title="Phone Number"><strong>Phone:</strong></abbr> 0963 8787 23<br>
+                                <!-- <abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br> -->
+                                <abbr title="Email Address"><strong>Email:</strong></abbr> quylk2906@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_one_third">
+                        <div class="widget clearfix">
+                            <h4>Client Testimonials</h4>
+                            <div class="fslider testimonial no-image nobg noborder noshadow nopadding" data-animation="slide" data-arrows="false">
+                                <div class="flexslider">
+                                    <div class="slider-wrap">
+                                        <div class="slide">
+                                            <div class="testi-image">
+                                                <a href="#"><img src="/assets/images/testimonials/3.jpg" alt="Customer Testimonails"></a>
+                                            </div>
+                                            <div class="testi-content">
+                                                <p>Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?</p>
+                                                <div class="testi-meta">
+                                                    Steve Jobs
+                                                    <span>Apple Inc.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slide">
+                                            <div class="testi-image">
+                                                <a href="#"><img src="/assets/images/testimonials/2.jpg" alt="Customer Testimonails"></a>
+                                            </div>
+                                            <div class="testi-content">
+                                                <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
+                                                <div class="testi-meta">
+                                                    Collis Ta'eed
+                                                    <span>Envato Inc.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slide">
+                                            <div class="testi-image">
+                                                <a href="#"><img src="/assets/images/testimonials/1.jpg" alt="Customer Testimonails"></a>
+                                            </div>
+                                            <div class="testi-content">
+                                                <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
+                                                <div class="testi-meta">
+                                                    John Doe
+                                                    <span>XYZ Inc.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col_one_third col_last">
+
+                        <div class="widget quick-contact-widget clearfix">
+
+                            <h4>Send Message</h4>
+
+                            <div class="quick-contact-form-result"></div>
+
+                            <form id="quick-contact-form" name="quick-contact-form" action="include/quickcontact.php" method="post" class="quick-contact-form nobottommargin">
+
+                                <div class="form-process"></div>
+
+                                <div class="input-group divcenter">
+                                    <span class="input-group-addon"><i class="icon-user"></i></span>
+                                    <input type="text" class="required form-control input-block-level" id="quick-contact-form-name" name="quick-contact-form-name" value="" placeholder="Full Name" />
+                                </div>
+                                <div class="input-group divcenter">
+                                    <span class="input-group-addon"><i class="icon-email2"></i></span>
+                                    <input type="text" class="required form-control email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder="Email Address" />
+                                </div>
+                                <textarea class="required form-control input-block-level short-textarea" id="quick-contact-form-message" name="quick-contact-form-message" rows="4" cols="30" placeholder="Message"></textarea>
+                                <input type="text" class="hidden" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck" value="" />
+                                <button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="btn btn-danger nomargin" value="submit">Send Email</button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- .footer-widgets-wrap end -->
+
+            </div>
+            <!-- Copyrights
+      			============================================= -->
+            <div id="copyrights">
+
+                <div class="container clearfix">
+
+                    <div class="col_half">
+                        Copyrights &copy; 2017 All Rights Reserved by Quylk MTP.<br>
+                        <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+                    </div>
+
+                    <div class="col_half col_last tright">
+                        <div class="fright clearfix">
+                            <a href="#" class="social-icon si-small si-borderless si-facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-gplus">
+                                <i class="icon-gplus"></i>
+                                <i class="icon-gplus"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-pinterest">
+                                <i class="icon-pinterest"></i>
+                                <i class="icon-pinterest"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-vimeo">
+                                <i class="icon-vimeo"></i>
+                                <i class="icon-vimeo"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-github">
+                                <i class="icon-github"></i>
+                                <i class="icon-github"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-yahoo">
+                                <i class="icon-yahoo"></i>
+                                <i class="icon-yahoo"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-linkedin">
+                                <i class="icon-linkedin"></i>
+                                <i class="icon-linkedin"></i>
+                            </a>
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <i class="icon-envelope2"></i> quylk2906@gmail.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +84-963-8787-23 <span class="middot">&middot;</span> <i class="icon-skype2"></i> Quylk. uit
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- #copyrights end -->
+        </footer>
+        <!-- #footer end -->
+
+
+    </div>
+    <div id="gotoTop" class="icon-angle-up"></div>
+    <!-- #wrapper end -->
+    <!-- External JavaScripts
+	============================================= -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+	============================================= -->
+    <script type="text/javascript" src="assets/js/functions.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+    <script type="text/javascript" src="assets/include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="assets/include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script type="text/javascript" src="assets/include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="assets/include/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="assets/include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="assets/include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="assets/include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="assets/include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="assets/include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="assets/include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script type="text/javascript">
+        var tpj = jQuery;
+
+        var revapi429;
+        tpj(document).ready(function() {
+            if (tpj("#rev_slider_429_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_429_1");
+            } else {
+                revapi429 = tpj("#rev_slider_429_1").show().revolution({
+                    sliderType: "standard",
+                    jsFileLocation: "asses/include/rs-plugin/js/",
+                    sliderLayout: "fullscreen",
+                    dottedOverlay: "none",
+                    delay: 9000,
+                    navigation: {
+                        keyboardNavigation: "on",
+                        keyboard_direction: "vertical",
+                        mouseScrollNavigation: "carousel",
+                        mouseScrollReverse: "default",
+                        onHoverStop: "off",
+                        touch: {
+                            touchenabled: "on",
+                            swipe_threshold: 75,
+                            swipe_min_touches: 1,
+                            swipe_direction: "vertical",
+                            drag_block_vertical: false
+                        },
+                        bullets: {
+                            enable: true,
+                            hide_onmobile: true,
+                            hide_under: 778,
+                            style: "hermes",
+                            hide_onleave: false,
+                            direction: "vertical",
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 20,
+                            v_offset: 0,
+                            space: 5,
+                            tmp: ''
+                        }
+                    },
+                    responsiveLevels: [1240, 1024, 778, 480],
+                    visibilityLevels: [1240, 1024, 778, 480],
+                    gridwidth: [1240, 1024, 778, 480],
+                    gridheight: [868, 768, 960, 720],
+                    lazyType: "smart",
+                    shadow: 0,
+                    spinner: "spinner2",
+                    stopLoop: "on",
+                    stopAfterLoops: 0,
+                    stopAtSlide: 1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    fullScreenAutoWidth: "off",
+                    fullScreenAlignForce: "off",
+                    fullScreenOffsetContainer: "",
+                    fullScreenOffset: "",
+                    disableProgressBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: false,
+                    }
+                });
+            }
+
+            revapi429.bind("revolution.slide.onloaded", function(e) {
+                setTimeout(function() {
+                    SEMICOLON.slider.sliderParallaxDimensions();
+                }, 200);
+            });
+
+            revapi429.bind("revolution.slide.onchange", function(e, data) {
+                SEMICOLON.slider.revolutionSliderMenu();
+            });
+        }); /*ready*/
+    </script>
+
+</body>
+
+</html>
